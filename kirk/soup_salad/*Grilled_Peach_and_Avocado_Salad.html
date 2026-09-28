@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grilled Peach and Avocado Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Grilled Peach and Avocado Salad</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Tbs Dijon Mustard</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Tbs honey</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Clove minced Garlic</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">salt &amp; pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup Olive Oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 cups Baby Arugula</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup Basil Leaves</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup Flat Leaf Parsley</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Peaches</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Avocado</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup Mozzarella Pearls / fresh mozzarella diced</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Whisk together the Dijon, honey, garlic, salt, pepper. Stream in the olive oil while whisking. Set aside.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large bowl, toss together the baby arugula, basil leaves, and parsley. Add the baby mozzarella. Put in the fridge.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat your grill to medium heat. Slice the peaches and remove the pit. Slice the Avocado and brush both with olive oil. Season well with salt and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place the peaches and the avocados slice side down on the grill. Grill for a few minutes, you want some grill lines on the fruit, but you don't want them to turn to mush.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Take the fruit off the grill. Slice the peaches and avocado and add to the salad bowl. Drizzle the dressing over, toss lightly, season with salt and pepper.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/grilled_peach_and_avocado_salad-1.jpg" alt="Grilled Peach and Avocado Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/grilled_peach_and_avocado_salad-2.jpg" alt="Grilled Peach and Avocado Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

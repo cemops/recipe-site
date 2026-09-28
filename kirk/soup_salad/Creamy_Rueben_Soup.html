@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creamy Reuben Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Creamy Reuben Soup</h1>
+            <p><em>Serves 6</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp butter</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 medium onion, diced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cloves garlic, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3 tbsp all-purpose flour</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 cups chicken broth</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1½ cups half-and-half or whole milk</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cups cooked corned beef, chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1½ cups sauerkraut, drained</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1½ cups shredded Swiss cheese</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp Dijon mustard</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp caraway seeds (optional)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Salt & freshly ground black pepper, to taste</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a large pot over medium heat, melt butter. Add onion and cook until soft, about 5 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add garlic and cook until fragrant, about 30 seconds.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Sprinkle in flour and cook, stirring constantly, for 1–2 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Gradually whisk in chicken broth until smooth.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in half-and-half and bring to a gentle simmer.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add corned beef, sauerkraut, Dijon mustard, and caraway seeds. Simmer 10 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Reduce heat to low and stir in Swiss cheese until melted and smooth.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Season with salt and pepper to taste. Serve hot.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row (Optional) -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/creamyruebensoup1.jpg" alt="Creamy Reuben Soup" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/creamyruebensoup2.jpg" alt="Reuben Soup Bowl" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

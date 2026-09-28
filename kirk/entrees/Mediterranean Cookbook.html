@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mediterranean Cookbook</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Mediterranean Cookbook</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Spezzatino di manzo alla toscana (Italian Chuck Roast) Pg. 160</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Daube (Provence Chuck Roast Stew) Pg. 160</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Souvlakia ( Greek pork kababs ) Pg. 168</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Insalata tricolore (Tomato, Mozz, Avocado salad) Pg 220</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Horiatiki salata (Tomato, cucumber, feta salad) Pg 221</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Peperonata (Sweet pepper, onion, tomatoe stew) Pg 230</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Tian aux courgettes (Zucchini, gruyere, cream bake) Pg 248</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Patatas bravas (potato, onion, tomato bake) Pg 252</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Champinones al ajillo (tapas garlic mushrooms - Kirk only) Pg 252</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Anchoiade (anchovy paste spread - Kirk only) Pg 20</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Habas con jamon (Fava beans w/ ham; side or apetizer) Pg 31</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Pisto manchego (ratatouille style soup / apetizer / side) Pg 48</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Soupe au pistou (veggie soup w/ pasta) Pg 50</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Minestrone Pg 52</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Harira (lamb veggie soup - involved) Pg 52</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Zuppa di fave (fava bean, potato soup w/ veggie topping) Pg 58</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sopa de pescado con hinojo (fish soup w muscles - Kirk only) Pg 61</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Zuppa di polpettine (meatball soup) Pg 66</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sopa de cuarto de hora (ham and rice soup) Pg 66</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Oeufs mimosa a la nicoise (boiled eggs w tapenade and anchovy - Kirk only) Pg 72</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Shakshouka (eggs in tomato and red bell pepper sauce) Pg 77</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Huevos a la flamenca (eggs in sauce in ramekins) Pg 79</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Tortilla de habas (egg and fava bean tortilla) Pg 80</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Pasta alla carbonara (pasta w/ egg &amp; parmesian sauce) Pg 104</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Risotto primavera (arborio w/ veggies) Pg 113</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Risi bisi (rice and peas w/ cheese) Pg 114</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Garides saganaki (pan fried shrimp in tomato sauce Kirk only) Pg 143</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Grand aioli (summer cod plate w/ fresh veggies) Pg 152</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Not included in the original recipe - add instructions here.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/mediterranean_cookbook-1.jpg" alt="Mediterranean Cookbook" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/mediterranean_cookbook-2.jpg" alt="Mediterranean Cookbook" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

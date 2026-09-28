@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spinach Salad with Chicken</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Spinach Salad with Chicken</h1>
+            <p><em>Serves 2</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 Cups fresh baby spinach</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 6 oz grilled chicken breast strips</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 12 cherry tomatoes or 1 chopped roma tomato</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 Tbs chopped walnuts, toasted</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 Tbs crumbled blue cheese</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 Tbs light dressing (e.g., raspberry-walnut vinaigrette)</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Combine spinach, chicken strips, and tomatoes in a small bowl.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Sprinkle with toasted walnuts and crumbled blue cheese.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Drizzle with dressing and serve immediately.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/spinachsalad1.jpg" alt="Spinach Salad with Chicken" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/spinachsalad2.jpg" alt="Spinach Salad Plated" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

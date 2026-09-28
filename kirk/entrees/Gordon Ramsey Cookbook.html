@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gordon Ramsey Cookbook</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Gordon Ramsey Cookbook</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Chilled Pea and coconut soup, pg 42</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Roasted butternut squash, Farro, and sumac salad. pg 45</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Tuna and Avocado Tartare, pg 56</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Grilled Salmon w/ Garlic, mushroom, and lentil Salad. pg 63</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Tuna steak w/ mayo and cucumber Salsa. pg 67</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Baked whole Tandoori spiced cauliflower. pg 82</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">chargrilled veggies w/ Bagna cauda dressing. pg 84</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">shared Asparagus salad w/ Hazelnut. pg 86</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Crunchy chickpeas. pg 98</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">chargrilled Peaches w/ Granola Crumble- pg 100</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Chocolate and Avocado mousse- page 104</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Spinach, Tomato, and feta scrambled eggs. page 115</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Zucchini omelet. page 121</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">One Pan Chicken w Lima Beans, Leeks and Spinach. pg 157</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Not included in the original recipe - add instructions here.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/gordon_ramsey_cookbook-1.jpg" alt="Gordon Ramsey Cookbook" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/gordon_ramsey_cookbook-2.jpg" alt="Gordon Ramsey Cookbook" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

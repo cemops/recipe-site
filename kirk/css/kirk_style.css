@@ -1,0 +1,7 @@
+/* Custom styles for Kirk's Recipes.
+   Linked AFTER w3.css in the page head so these rules win on conflicts. */
+
+.title-icon {
+    background: url('/kirk/images/kr.jpg') no-repeat left center;
+    padding-left: 20px; /* adjust to icon size */
+}

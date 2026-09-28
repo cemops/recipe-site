@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>3 Cheese Spinach Tortellini Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>3 Cheese Spinach Tortellini Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 Cups low sodium chicken stock</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 2 tsp minced garlic</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 9 oz package 3 cheese tortellini (frozen)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Dried basil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 package frozen chopped spinach, thawed and squeezed OR Fresh spinach OR Kale (Last time I tried combo of spinach and kale, cooked in the broth first then added rest of ingredients)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt &amp; Pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 14 oz can Italian stewed tomatoes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Parmesan cheese</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large pot, bring stock to simmer</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in tortellini and simmer gently for 3 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in spinach, garlic, basil, salt, pepper and tomatoes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Return to simmer and cook for 2 - 3 more min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Serve hot with Parmesan cheese</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/3_cheese_spinach_tortellini_soup-1.jpg" alt="3 Cheese Spinach Tortellini Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/3_cheese_spinach_tortellini_soup-2.jpg" alt="3 Cheese Spinach Tortellini Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Cooked Rice</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Basic Cooked Rice</h1>
+            <p>Makes <strong>6 Cups</strong></p>
+        </div>
+    </div>
+
+    <!-- Intro / Notes -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m8 w3-padding">
+            <div class="w3-panel w3-padding-16 w3-border w3-round-large w3-theme-l4">
+                <p>If you make this ahead of time and store it, omit the bell peppers — they tend to sour quickly. Use chicken stock with chicken dishes, seafood stock with seafood dishes, and beef stock with beef dishes.</p>
+            </div>
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 cups uncooked rice (preferably converted)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 1/2 cups stock</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tbsp very finely chopped onions</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tbsp very finely chopped celery</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tbsp very finely chopped green bell pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tbsp unsalted butter, melted</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/8 tsp garlic powder</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">A pinch each of white pepper, cayenne pepper, black pepper</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat oven to 350°F (175°C).</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a 5 × 9 × 2½ inch loaf pan, combine all ingredients and mix well.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Seal pan snugly with aluminum foil.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bake until rice is tender, about 1 hour and 10 minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Serve immediately — rice stays hot for ~45 minutes and warm for up to 2 hours.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">To reheat leftover rice, use a double boiler or warm it in a skillet with unsalted butter.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row (moved to bottom, above footer) -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/basic_cooked_rice1.jpg" alt="Basic Cooked Rice" style="width:90%">
+        </div>
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/basic_cooked_rice2.jpg" alt="Basic Cooked Rice" style="width:90%">
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end of Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

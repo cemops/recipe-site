@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Stracciatella alla Romana</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Stracciatella alla Romana</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">7 Cups Hot Chicken Stock</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Finely Grated Parm. Cheese</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Grated Zest of 1 Lemon</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Finely Chopped Flat Leaf Parsley</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">*** Last time added some shredded roasted chicken for volume ***</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">*** You can alternatively ad dried prosciutto, seeded peperoncini etc. ***</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large pan, bring the stock to a boil and reduce by 1/3. Season to taste w/ salt??</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a bowl, whisk the eggs with the parm., nutmeg, and lemon zest until well blended.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Reduce the heat to a steady simmer and whisk in the egg mixture. Continue to whisk for 1 - 2 min. as the egg forms fine pasta like threads.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">If adding chicken, ad it after the eggs are done.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Taste and add more cheese and seasoning if you like. Garnish with parsley.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/stracciatella_alla_romana-1.jpg" alt="Stracciatella alla Romana" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/stracciatella_alla_romana-2.jpg" alt="Stracciatella alla Romana" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

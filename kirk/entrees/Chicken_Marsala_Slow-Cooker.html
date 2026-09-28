@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Slow Cooker Chicken Marsala</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Slow Cooker Chicken Marsala</h1>
+            <p><em>Serves 4</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 boneless, skinless chicken thighs</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup sliced cremini mushrooms</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3/4 cup Marsala wine</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup low-sodium chicken broth</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp olive oil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 small onion, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cloves garlic, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp cornstarch + 1 tbsp water (slurry)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp dried thyme (or fresh sprigs)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Salt & pepper to taste</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Fresh parsley, chopped (for garnish)</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Season chicken with salt and pepper.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a skillet over medium heat, sear chicken in olive oil until lightly golden, 2–3 minutes per side.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Place chicken in slow cooker. Top with mushrooms, onion, garlic, and thyme.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Pour Marsala wine and chicken broth over the chicken.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cover and cook on LOW for 5–6 hours or HIGH for 2.5–3 hours.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Remove chicken. Stir cornstarch slurry into sauce and cook on HIGH for 10–15 minutes to thicken.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Return chicken to slow cooker, coat with sauce, garnish with parsley, and serve warm.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/chickenmarsala1.jpg" alt="Slow Cooker Chicken Marsala" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/chickenmarsala2.jpg" alt="Chicken Marsala Plated" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+<!-- End Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

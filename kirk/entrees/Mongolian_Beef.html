@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mongolian Beef</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Mongolian Beef</h1>
+     <p><em>Sweet, savory, and spicy beef that's perfect over rice or noodles.</em></p>
+    </div>
+</div>
+
+<!-- First Row -->
+<div class="w3-row">
+    <div class="w3-col m2"><br></div>
+
+    <!-- Ingredients -->
+    <div class="w3-col m4 w3-theme-l4">
+     <h3>Ingredients:</h3>
+     <button onclick="clearAllCheckboxes();">Delete All</button>
+     <p>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbs dark sesame oil</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp minced garlic</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">4 green onions, cut into 1-inch pieces</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 lb flank steak, thinly sliced</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup water</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs low sodium soy sauce</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">4 tsp corn starch</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp crushed red pepper flakes</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp brown sugar</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Toasted sesame seeds (optional)</div>
+     </p>
+    </div>
+
+    <!-- Directions -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Directions:</h3>
+        <button onclick="clearAllCheckboxes();">Delete All</button>
+        <p>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat oil in a large non-stick skillet over medium-high heat.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Add garlic and green onions; stir frequently for 1 minute.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Add beef and cook 5 minutes or until browned, stirring frequently.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">In a small bowl, combine water, soy sauce, corn starch, red pepper flakes, and brown sugar.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Pour sauce over beef and cook 1–2 minutes until thickened and beef is cooked through.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Garnish with sesame seeds if desired.</div>
+        </p>
+    </div>
+
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Nutrition Row -->
+<div class="w3-row w3-padding">
+    <div class="w3-col m2"><br></div>
+    <div class="w3-col m8 w3-theme-l3 w3-padding">
+        <h3>Nutritional Information:</h3>
+        <p>
+            <strong>Yield:</strong> 4 servings (1 cup each)<br>
+            <strong>Calories:</strong> 234<br>
+            <strong>Fat:</strong> 11g<br>
+            <strong>Protein:</strong> 25.4g<br>
+            <strong>Carbohydrates:</strong> 6.7g<br>
+            <strong>Fiber:</strong> 0.7g<br>
+            <strong>Cholesterol:</strong> 48mg<br>
+            <strong>Iron:</strong> 2.3mg<br>
+            <strong>Sodium:</strong> 335mg<br>
+            <strong>Calcium:</strong> 47mg
+        </p>
+    </div>
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>

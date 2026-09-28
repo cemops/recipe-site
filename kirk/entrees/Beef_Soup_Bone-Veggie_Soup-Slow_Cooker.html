@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beef Soup Bone Vegetable Stew</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Beef Soup Bone Vegetable Stew</h1>
+            <p><em>Slow Cooker Recipe</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2–3 lbs beef soup bones</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 lb beef roast, cut into 1-inch cubes</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp apple cider vinegar</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 6 cups water</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp olive oil or other cooking fat</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 cloves garlic, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 onion, diced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1.5 lbs potatoes, chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 carrots, diced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup tomato sauce</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp Worcestershire sauce</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp fish sauce <em>(optional)</em></div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 bay leaves</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp black pepper</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3 tbsp tapioca or arrowroot starch + 2–3 tbsp water (slurry)</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Heat a pan over medium-high heat and sauté garlic and onion in olive oil until fragrant.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add beef soup bones to the pan and sear on both sides.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Transfer soup bones, garlic, and onion to a slow cooker.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add water and apple cider vinegar to the slow cooker.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add remaining ingredients except the starch slurry.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cook on LOW for 8 hours (or about 200°F / 93°C).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Remove bay leaves and bones from the stew.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in starch slurry and cook until stew thickens.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/beef_stew1.jpg" alt="Beef Soup Bone Vegetable Stew" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/beef_stew2.jpg" alt="Slow Cooker Beef Vegetable Stew" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+<!-- End Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

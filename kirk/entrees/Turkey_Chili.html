@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Turkey Chili</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Turkey Chili</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <h4>Turkey:</h4>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 lb Ground Turkey</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tsp Cumin</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tsp Coriander</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tsp Worcestershire Sauce</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt & Pepper</div><br>
+            </p>
+
+         <h4>Chili:</h4>
+         <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Green Pepper, Chopped</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Large Onion, Chopped</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Celery Stalks, Chopped</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Worcestershire Sauce</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Franks or Tabasco Sauce (wait until done and add then)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Brown Sugar</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Large Can Diced Tomatoes</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Large Can Chili Hot Beans (or mild)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 - 1 Bottle of Killian's or other dark beer</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cap Fulls of Bourbon</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Small Can Stewed Tomatoes (Last time I added "Mexican Style")</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Sauté turkey with Worcestershire, cumin, coriander, salt and pepper until cooked through.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- In a large pot, add EVOO and butter and sauté green pepper, onion, celery.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Add remaining ingredients, bring to a boil, reduce heat to low and simmer for at least an hour.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/turkey_chili.jpg" alt="Turkey Chili" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/ingredients.jpg" alt="Ingredients" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

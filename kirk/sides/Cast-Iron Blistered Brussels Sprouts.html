@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cast-Iron Blistered Brussels Sprouts</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Cast-Iron Blistered Brussels Sprouts</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 pound fresh Brussels sprouts</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 tablespoons canola oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 teaspoon kosher salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon honey</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon hot water</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon minced garlic (about 2 cloves)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon soy sauce</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 teaspoon dried crushed red pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup torn fresh mint leaves</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat a 12-inch cast-iron skillet over medium-high heat 5 minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Trim Brussels sprouts, and cut in half lengthwise.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add canola oil to skillet, and tilt skillet to evenly coat bottom.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place Brussels sprouts, cut side down, in a single layer in skillet.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cook, without stirring, 4 minutes or until browned.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sprinkle with kosher salt; stir and cook 2 more minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir together honey and hot water.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir minced garlic, soy sauce, dried crushed red pepper, and honey mixture into Brussels sprouts.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in mint leaves, and serve immediately.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/cast_iron_blistered_brussels_sprouts-1.jpg" alt="Cast-Iron Blistered Brussels Sprouts" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/cast_iron_blistered_brussels_sprouts-2.jpg" alt="Cast-Iron Blistered Brussels Sprouts" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

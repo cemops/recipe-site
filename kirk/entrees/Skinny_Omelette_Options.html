@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Skinny Omelette Options</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!-- Navigation Bar -->
+<div id="nav-placeholder"></div>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+    $(function(){
+        $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+    <div class="w3-center w3-theme-d1">
+        <h1>Skinny Omelette Options</h1>
+    </div>
+
+    <!-- Basic Omelette Instructions -->
+    <div class="w3-theme-l4 w3-padding">
+        <h3>Skinny Omelette Base:</h3>
+        <p>2 Eggs in a large non-stick skillet over medium-high heat, well beaten and swirled around the pan evenly. Cook for 15 seconds to 1 minute. Season according to filling.</p>
+        <p>With a spatula, remove from pan onto cutting board. Spread filling across omelette, roll, then slice in half with a deep diagonal cut.</p>
+    </div>
+
+    <!-- Filling Options -->
+    <div class="w3-theme-l4 w3-padding">
+        <h3>Filling Options:</h3>
+
+        <h4>Standard:</h4>
+        <ul>
+            <li>Pesto</li>
+            <li>Chives</li>
+            <li>Feta</li>
+            <li>Salad Greens</li>
+            <li>Salt</li>
+        </ul>
+
+        <h4>Caprese:</h4>
+        <ul>
+            <li>Long sliced tomato</li>
+            <li>Long sliced mozzarella cheese</li>
+            <li>Fresh basil</li>
+            <li>Olive Oil</li>
+            <li>Salt / Pepper</li>
+        </ul>
+
+        <h4>Ratatouille:</h4>
+        <ul>
+            <li>Leftover grilled vegetables</li>
+            <li>Asiago Cheese</li>
+            <li>Olive Oil</li>
+            <li>Balsamic Vinegar</li>
+            <li>Salt / Pepper</li>
+            <li>OR Leftover Ratatouille</li>
+        </ul>
+
+        <h4>Chicken Teriyaki:</h4>
+        <ul>
+            <li>Grilled Chicken Teriyaki, long/thin sliced</li>
+            <li>Grilled Teriyaki Vegetables</li>
+            <li>Sesame Seeds</li>
+            <li>Happy Sauce</li>
+        </ul>
+
+        <h4>Thai Vegetable:</h4>
+        <ul>
+            <li>Red Curry Paste</li>
+            <li>Thai Grilled Chicken</li>
+            <li>Bean Sprouts</li>
+            <li>Green Onions</li>
+            <li>Cabbage or Cellophane Noodles</li>
+        </ul>
+
+        <h4>Breakfast:</h4>
+        <ul>
+            <li>Bacon</li>
+            <li>Tomato</li>
+            <li>Spinach</li>
+            <li>Asiago Cheese</li>
+            <li>Salt / Pepper</li>
+        </ul>
+
+        <h4>Steak:</h4>
+        <ul>
+            <li>Leftover Steak</li>
+            <li>Asparagus or Spinach</li>
+            <li>Happy Sauce</li>
+        </ul>
+
+        <h4>Southwest:</h4>
+        <ul>
+            <li>Long, thin sliced Avocado</li>
+            <li>Cilantro</li>
+            <li>Tomato</li>
+            <li>Frozen corn, thawed</li>
+            <li>Lime Juice</li>
+            <li>Salt / Pepper</li>
+        </ul>
+
+        <h4>Italian:</h4>
+        <ul>
+            <li>Polenta - fried and cut into long strips</li>
+            <li>Olives</li>
+        </ul>
+
+        <h4>Creole:</h4>
+        <ul>
+            <li>Creole Filling - Paul Prudhomme; pg 131 OR any meat pie filling pages 130 - 134</li>
+        </ul>
+
+        <h4>Walnut / Grape Salad:</h4>
+        <ul>
+            <li>Spring Mix Lettuce</li>
+            <li>Grapes - quartered</li>
+            <li>Walnuts - chopped and toasted</li>
+        </ul>
+        <H4>Cajun Omelette</H4>
+        <ul>
+            <li>You can also use the filling from the <a href="../breakfast/Cajun_Omelette.html" target="_blank" style="color: blue">Cajun Omelette</a> recipe.</li>
+        </ul>    
+    </div>
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = false;
+    });
+}
+
+function myFunction() {
+    var x = document.getElementById("smallBar");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>

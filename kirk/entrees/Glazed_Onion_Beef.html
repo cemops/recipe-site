@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glazed Onion - Sauteed Beef (Blue Apron)</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Glazed Onion - Sauteed Beef (Blue Apron)</h1>
+     <p>Makes: 2 Servings</p>
+     <p>Prep Time: 10 Min | Cook Time: 30 Min</p>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">10 oz thinly sliced beef</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Yellow Onion - thinly sliced</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs Tomato Paste</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbs White Wine Vinegar</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Bunch Thyme</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Bunch Chives</div><br>
+            </p>
+        </div>
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo"><strong>Caramelize the Onions:</strong> In a large pan, heat 2 tsp of olive oil on medium until hot. Add the sliced onion. Cook, stirring occasionally, 8 - 10 min. or until lightly browned. Add 1 Tbs of water, cook stirring frequently, 1 to 2 min, or until very tender. Add the tomato paste and thyme; cook, stirring frequently, 1 to 2 min, or until dark red. Add the vinegar and 1/4 cup of water. Cook, stirring frequently, 30 seconds to 1 min, or until well combined. Transfer to a bowl.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo"><strong>Cook the Beef:</strong> Using your hands, separate the beef; pat dry with paper towels. Transfer to a bowl; season with salt and pepper. Toss to coat. In a large pan, heat 1 tsp of olive oil on high until hot. Add the beef in a single layer, cook without stirring, 1 - 2 min. Add the caramelized onions, cook, stirring constantly, 30 seconds to 1 minute. Garnish with chives.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/glazed_onion_sauteed_beef.jpg" alt="Glazed Onion - Sauteed Beef" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/glazed_onion_sauteed_beef-2.jpg" alt="Glazed Onion - Sauteed Beef" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

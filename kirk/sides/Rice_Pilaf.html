@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rice Pilaf</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Rice Pilaf</h1>
+        </div>
+    </div>
+
+    <!-- First Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Unsalted Butter</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Onion, finely chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Cloves Garlic, minced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Kosher Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp freshly ground black pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 Cups long-grain white rice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Cups Low Sodium Chicken Broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Parsley, chopped</div>
+            </p>
+        </div>
+
+        <!-- Instructions -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Rinse rice thoroughly until water runs clear. Drain well.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Melt butter in a medium saucepan over medium heat. Add rice and cook, stirring, until lightly golden.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add onion, garlic, salt, and pepper. Cook until onion has softened.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add chicken broth and bring to a boil. Cover with a tight lid and reduce heat to a simmer. Do not uncover while cooking.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Simmer for 18 minutes. Remove from heat and let rest (covered) for 10 minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Fluff rice with a fork and gently stir in chopped parsley.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Optional Image Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m8 w3-center">
+            <img src="/kirk/images/rice_pilaf.jpg" alt="Rice Pilaf" style="width:90%">
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Notes -->
+    <div class="w3-row w3-padding">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m8 w3-theme-l3">
+            <h4>Notes:</h4>
+            <p>
+                1. Yields about 4½ cups of rice. Serving size: ¾ cup.<br>
+                2. <b>Brown Rice Pilaf:</b> Use ½ cup more broth and cook for about 40 minutes.<br>
+                3. <b>Orzo Rice Pilaf:</b> Use 1 cup rice + ½ cup orzo.<br>
+                4. <b>Vegetable Rice Pilaf:</b> Add celery, bell pepper, carrots, peas, and use vegetable broth.<br>
+                5. <b>Leftover Ideas:</b> Great in Chicken & Rice Enchiladas, Crispy Southwest Wraps, Creamy Wild Rice Soup, Breakfast Fried Rice, Salmon Bowls, Arroz Chaufa, or Eggroll in a Bowl.
+            </p>
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+</body>
+</html>

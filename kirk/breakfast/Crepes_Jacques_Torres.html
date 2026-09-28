@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crepes - Jacques Torres</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Crepes - Jacques Torres</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tbsp. unsalted butter</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 1⁄2 cups water</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 1⁄4 cups all-purpose flour</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1⁄2 cup skim milk</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 large egg yolks</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1⁄2 tsp. kosher salt</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1⁄2 tsp. sugar</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Vegetable oil, for greasing</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- In a small skillet, heat the butter over medium-high until it smells nutty and turns golden in color, about 4 minutes.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Pour the butter into a blender along with the water, flour, milk, egg yolks, salt, and sugar, and blend until smooth. Pour the batter into a bowl (you should have 4 cups).</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Heat a 12-inch non-stick crêpe pan or skillet over medium-high heat and using a crumpled paper towel, grease the pan lightly with oil.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Using a ladle, pour ½ cup of the batter in the center of the pan, quickly swirling the pan to coat the entire surface with batter, and cook, without touching, for 2 minutes.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Using an offset spatula, carefully flip the crêpe and cook 1 minute more. Transfer the crêpe to a plate and repeat making crêpes with the remaining batter until you have 8 crêpes total.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/crepes.jpg" alt="Crepes" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/crepe_pan.jpg" alt="Crepe Pan" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

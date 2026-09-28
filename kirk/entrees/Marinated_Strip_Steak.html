@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Marinated Strip Steaks with Gorgonzola Sauce</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Marinated Strip Steaks</h1>
+            <p><em>With Gorgonzola Sauce · Serves 4</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <h4>Marinade</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cups beef broth</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup dry red wine</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 medium yellow onion, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp tomato paste</div>
+
+                    <h4>Steaks</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 New York strip steaks</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Extra-virgin olive oil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Kosher salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Freshly ground black pepper</div>
+
+                    <h4>Gorgonzola Sauce</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp unsalted butter</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp minced shallot</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup sour cream</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 oz crumbled gorgonzola cheese (about 1 cup)</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a large glass baking dish, whisk together beef broth, red wine, onion, and tomato paste until smooth.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Submerge steaks in the marinade, cover, and refrigerate for 2–4 hours.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat grill to 450–550°F.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Remove steaks from marinade, pat dry, and discard marinade.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Lightly brush steaks with olive oil, season with salt and pepper, and let rest at room temperature for 15–30 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Meanwhile, melt butter in a medium saucepan over medium heat. Add shallot and cook until tender, about 2 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in sour cream and gorgonzola; cook until the sauce begins to simmer and cheese is melted, about 3 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Remove sauce from heat, add ¼ tsp black pepper, cover, and keep warm.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Grill steaks to desired doneness. Rest briefly, then serve topped with warm gorgonzola sauce.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row (Optional) -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/stripsteak_grill_1.jpg" alt="Grilled Strip Steak" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/gorgonzola_sauce_1.jpg" alt="Gorgonzola Sauce" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chicken Diane</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Chicken Diane</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 (5- to 6-ounce) boneless, skinless chicken breast cutlets, or 2 (10- to 12-ounce) chicken breasts, each halved horizontally into 2 cutlets</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1/2 teaspoons kosher salt, divided</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3/4 teaspoon black pepper, divided</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tablespoon canola oil</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons unsalted butter, divided</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 (8-ounce) packages sliced fresh button mushrooms</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 large (1 1/2 ounce) shallot, finely chopped (1/4 cup)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons (1 ounce) brandy</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 cup lower-sodium chicken broth</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 cup heavy whipping cream</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tablespoon fresh lemon juice (from 1 lemon)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 teaspoons Dijon mustard</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 teaspoons Worcestershire sauce</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 cup finely chopped fresh flat-leaf parsley</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Lemon wedges, for serving</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Sprinkle chicken evenly with 1 teaspoon of the salt and 1/2 teaspoon of the pepper.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Heat oil and 1 tablespoon of the butter in a large skillet over high. Add chicken to skillet; cook until golden brown on each side and a thermometer inserted into thickest portion of meat registers 165°F, about 4 minutes per side. Transfer chicken to a plate; set aside. Do not wipe skillet clean.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Reduce heat under skillet to medium-high. Add mushrooms and remaining 1 tablespoon butter; cook, stirring occasionally, until mushrooms release liquid and begin to brown, about 5 minutes.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Add shallot; cook, stirring often, until tender, about 3 minutes.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Add brandy; cook, undisturbed, until liquid is almost evaporated, about 15 seconds. Add broth, cream, lemon juice, mustard, and Worcestershire; cook, stirring often, until sauce reduces slightly, about 3 minutes.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Stir in parsley and remaining 1/2 teaspoon salt and 1/4 teaspoon pepper. Remove from heat. Nestle chicken and any accumulated juices into mixture in skillet. Serve with lemon wedges.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chicken_diane.jpg" alt="Chicken Diane" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chicken_diane2.jpg" alt="Chicken Diane" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

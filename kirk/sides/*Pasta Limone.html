@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pasta Limone</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Pasta Limone</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">12 oz spaghetti, linguine or bucatini - Use Whole Wheat</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Leeks, Thinly Sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Garlic Cloves, Thinly Sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Zest and Juice of 1 Lemon (Try 1/2 of lemon juice)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Sprigs Basil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Kosher Salt - Cut back on the salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 tsp Black Pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Grated Parm Cheese</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine pasta, 4 1/2 Cups Water, leeks, garlic, lemon zest, basil, salt &amp; pepper in a large skillet with 2-inch sides.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bring the water to a boil and cook, stirring occasionally, until the water is nearly gone and the pasta is fully cooked, 8 - 10 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the lemon juice and parmesan, and toss to combine. Season with salt and pepper to taste. Garnish with basil leaves and lemon zest.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><strong>** Good with lemon pepper grilled chicken tenders **</strong></div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><strong>** Also great with Garlic Butter Shrimp and black olives**</strong></div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/pasta_limone-1.jpg" alt="Pasta Limone" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/pasta_limone-2.jpg" alt="Pasta Limone" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

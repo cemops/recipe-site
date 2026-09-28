@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tomato & Mozzarella Stacks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!-- End of Navigation bar -->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!-- End of Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Tomato & Mozzarella Stacks</h1>
+        </div>
+    </div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Large Tomatoes</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8 oz Buffalo Mozzarella Cheese</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">24 Basil Leaves</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Olive Oil</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt & Pepper</div><br>
+            </p>
+        </div>
+
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Cut the tomatoes into 3 slices each.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Slice the mozzarella into 12 thin slices.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Slice the basil into thin ribbons, leaving 4 whole pieces.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Brush the center of a 7-inch square aluminum foil with oil.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5. Place a tomato slice on the foil, brush with olive oil, salt, and pepper. Add basil ribbons and a slice of cheese.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6. Repeat the layering, finishing with a slice of cheese, a whole basil leaf, then fold the edges of the foil to close completely.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">7. Cook over medium heat, covered, for 8-10 minutes until the top tomato slice is heated and the cheese has melted.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8. Serve immediately.</div><br>
+            </p>
+        </div>
+
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    </div>
+    
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!-- End of Footer -->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>

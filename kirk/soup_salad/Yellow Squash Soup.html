@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yellow Squash Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Yellow Squash Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 large Sweet Onions, chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 medium Leek (white portion only), chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Olive Oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 Garlic cloves, minced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 medium yellow summer squash, seeded and cubed (about 6 cups)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Cups reduced-sodium Chicken Broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 fresh Thyme sprigs</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Lemon Juice (I used fresh squeezed)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/8 tsp Tabasco Sauce</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS shredded Parmesan cheese</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp grated lemon peel</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large saucepan, saute onion and leek in oil until tender. Add garlic; cook 1 minute longer. Add squash; saute 5 minutes. Stir in broth, thyme and salt.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bring to a boil. Reduce heat; cover and simmer for 15 - 20 min or until squash is tender.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Discard Thyme sprigs and mix with hand blender until smooth.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in the lemon juice and Tabasco; heat through.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sprinkle each serving with cheese and lemon peel.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/yellow_squash_soup-1.jpg" alt="Yellow Squash Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/yellow_squash_soup-2.jpg" alt="Yellow Squash Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

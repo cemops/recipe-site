@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spinach and Bacon Pizza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Spinach and Bacon Pizza</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">5-6 tbsp marinara or pizza sauce</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">6 oz fresh mozzarella, sliced (more if desired)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 bag (9 ounces) fresh spinach leaves</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">6 slices bacon, cooked and chopped</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Roma tomato (optional)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Sautéed mushrooms (optional)</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Heat grill to around 500° F.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Chop and cook the bacon.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Grill the pizza crust on the ‘finished side’ for 2 - 3 min. Remove and flip the pizza crust.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">4. As the grill is heating up, heat a skillet over medium. Add the fresh spinach leaves and allow them to wilt, stirring occasionally for about 5 minutes. When the leaves have wilted, remove from heat and drain the leaves on a paper towel. When the leaves have cooled, wring them through another towel to remove any excess moisture. Set aside.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">5. On the turned over pizza crust, lightly spread the marinara sauce then top with the sliced mozzarella and spinach leaves. Sprinkle the cooked chopped bacon on top. When this is complete, transfer the pizza back on to the grill. Close the grill lid and cook for an additional 4 minutes, until cheese is bubbly and golden.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">6. Remove cooked pizza from the grill and on to a baking sheet. Sprinkle with parmesan cheese, slice into pieces, and enjoy!</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/spinach_bacon_pizza.jpg" alt="Spinach and Bacon Pizza" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/spinach_bacon_pizza-2.jpg" alt="Spinach and Bacon Pizza" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

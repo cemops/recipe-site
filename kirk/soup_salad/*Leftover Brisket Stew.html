@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Leftover Brisket Stew</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Leftover Brisket Stew</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 – 6 cup(s) brisket, cut in 1 – 2-inch cubes (cut against the grain of the meat)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 onion, rough chopped (cubed)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 green bell pepper chopped in 1-inch cubes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 can(s) diced tomatoes – 16-ounce cans with juice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 can lima beans – 14.5 ounce, drained</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 – 6 small Idaho or white potatoes, cut in 2 -3-inch cubes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 can green beans -14. 5 ounces, drained</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 – 8 cups water</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon black pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon garlic salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 can cream of corn -14.5 ounce</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 teaspoons Tony Chachere's Creole Seasoning or any Cajun Seasoning (optional)</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">On a cutting board, cut brisket in 1 -2-inch chunks by slicing against the grain and place in a large stew pot or Dutch oven.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Chop onion and green bell pepper and add to pot.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add all canned vegetables, potatoes and water to the pot except cream of corn.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add all seasonings (pepper, garlic salt and Tony Chachere's Creole Seasoning).</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bring stew to a boil and then reduce heat to a low heat and simmering boil for 15 minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cook stew covered for 10 more minutes and then add cream of corn to help thicken your stew.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add 1 – 2 cups more water if you think it needs it if you do not have enough broth or 'soup' to boil your potatoes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cook an additional 10 – 20 minutes and serve with cornbread or saltine crackers!</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/leftover_brisket_stew-1.jpg" alt="Leftover Brisket Stew" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/leftover_brisket_stew-2.jpg" alt="Leftover Brisket Stew" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

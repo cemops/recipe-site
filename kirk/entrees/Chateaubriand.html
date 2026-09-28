@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chateaubriand</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Chateaubriand with Chateau Potatoes</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <h4>Chateaubriand:</h4>
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 center cut beef tenderloin (approx. 1lb.)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons butter</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons olive oil</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt / Ground black pepper</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 shallot, finely chopped</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 cup dry red wine</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 cup demi-glace</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tablespoon butter, softened</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tablespoon fresh Tarragon (2 teaspoons dried)</div><br>
+            </p>
+
+            <h4>Demi-Glace:</h4>
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Cups Beef broth</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Tbs Butter</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tsp cornstarch in 3 Tbs Water</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/8 tsp balsamic vinegar</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <h4>For the Chateaubriand:</h4>
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- If cooking for Medium & Medium Rare - Half the roast and put on 10 min before the other half.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Olive oil, Salt and Pepper the steak.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Baste the beef occasionally with the remaining demi-glace while cooking.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Sear the beef on high on all 4 sides for 5 min each side.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Remove to indirect heat and cook for 20 min.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- While the steak is cooking prepare the sauce: In a hot skillet melt the butter and combine with the olive oil.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Add in the red wine, demi-glace, shallot, and tarragon.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Whisk together and heat until it becomes a light gravy.</div><br>
+             </p>
+
+             <h4>How to Grill Chateaubriand - Reverse Sear:</h4>
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Start with a large, 1- to 2-pound beef tenderloin roast of at least 1 1/4-inch thickness. Brush both sides with oil and lightly season with salt and pepper.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- If using a gas grill turn one side to the highest possible setting and the other to a medium low heat. Place the beef tenderloin on the low-temperature side and close the lid.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- For medium rare leave the tenderloin to cook for 5 minutes. For medium and above, leave it for about 7 minutes before opening the lid and turning the meat, leaving it in the low-temperature zone. After an additional 5 to 7 minutes it is time to place it on the direct and high heat.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- At this point, the tenderloin should be browned on both sides and through the edges with little or no grill marks. Leave the meat on the grill at a high temperature with the lid closed for two to three minutes depending on the heat of your grill, then check. Now there should be dark grill marks and a rich and dark brown color to the cooked side. If not, continued grilling until these are evident. Once you have this appearance, turn the meat over and continued on the other side.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Once finished on the grill, move the meat to a cutting board, cover and leave to rest for 5 to 10 minutes.</div><br>
+             </p>
+
+             <h4>Serving Chateaubriand:</h4>
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- See the recipe for traditional Chateaubriand.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- To make the topping, melt 2 tablespoons of butter with 2 tablespoons of olive oil in a heavy and hot skillet. Add one large, finely chopped shallot with 1/2 cup of white wine, 1/2 cup demi-glace, and 1 tablespoon fresh tarragon (2 teaspoons dried). Whisk together and heat until it thickens into a light gravy.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- When the meat has rested, cut into thin strips against the grain and serve with the sauce. This dish is traditionally served with chateau potatoes. These small potatoes are roasted in a heavy pan, covered in butter. Not a recipe for the dieter, but well worth the extra calories.</div><br>
+             </p>
+			 
+			 <p>
+				This recipe serves well with <a href="../sides/Chateau_Potatoes.html">Chateau Potatoes</a>
+			 </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chateaubriand.jpg" alt="Chateaubriand" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chateau_potatoes.jpg" alt="Chateau Potatoes" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

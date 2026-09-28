@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Firecracker Salmon</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Firecracker Salmon</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients For 2:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.5 teaspoon minced garlic</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.25 teaspoon minced ginger</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.5 tablespoon olive oil</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.5 tablespoons low sodium soy sauce</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tablespoon Heinz chili sauce (or substitute)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.5 teaspoon brown sugar (optional)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">pinch of crushed red chili flakes</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.5-1 teaspoons sriracha</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 skin off salmon fillets</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt and pepper to season</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.25 teaspoon paprika</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">0.13 cup chives chopped</div><br>
+            </p>
+            
+            <h3>Ingredients For 4:</h3>
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 teaspoon minced garlic</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 teaspoon minced ginger</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tablespoon olive oil</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tablespoon low sodium soy sauce</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons Heinz chili sauce (or substitute)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 teaspoon brown sugar (optional)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">pinch of crushed red chili flakes</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1-2 teaspoons sriracha</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 skin off salmon fillets</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt and pepper to season</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 teaspoon paprika</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 cup chives chopped</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- In a shallow bowl, whisk together the minced garlic, minced ginger, olive oil, soy sauce, chili sauce, brown sugar, red chili flakes, and sriracha to combine.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Season salmon with salt, pepper, and paprika. Add salmon fillets to the marinade, turning each to evenly coat in the sauce.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Cover with plastic wrap and let marinate in the refrigerator for 2 hours or overnight (if time allows).</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Preheat oven to 370°F (190°C). Heat an oven-proof skillet over medium heat with a small drizzle of oil.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Sear salmon for 2-3 minutes on both sides, undisturbed, to get a nice crust. (You may need to sear in batches depending on the size of your skillet.) Transfer to plate and repeat with remaining salmon.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Return all salmon fillets to the skillet. Alternatively, transfer to baking dish. Bake for 8-10 minutes, or until cooked to your liking. Serve warm with chopped chives.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- FOR ADDED FLAVOUR: Make a double batch of firecracker sauce. Brush the salmon after baking with the extra sauce before serving.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Nutrition Information -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+        
+        <div class="w3-col m8 w3-theme-l4">
+            <h3>Nutrition:</h3>
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Calories: 286kcal</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Carbohydrates: 2g</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Protein: 34g</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Fat: 14g</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Saturated Fat: 2g</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Cholesterol: 93mg</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Sodium: 293mg</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Potassium: 856mg</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Sugar: 1g</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Vitamin A: 350IU</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Vitamin C: 3.2mg</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Calcium: 20mg</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Iron: 1.5mg</div><br>
+            </p>
+        </div>
+        
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/firecracker_salmon.jpg" alt="Firecracker Salmon" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/salmon_dish.jpg" alt="Salmon Dish" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

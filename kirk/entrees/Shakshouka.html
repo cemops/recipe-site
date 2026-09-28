@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shakshouka</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Shakshouka</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs Olive Oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Onion, Halved and Thinly Sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Red Peppers, Finely Sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Garlic Cloves, Finely Chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Jalepeno, Seeded and Finely Chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Sugar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 14 oz Can Diced Tomatoes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt and Freshly Ground Black Pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Large Eggs</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Small Bunch Flat Leaf Parsely, Finely Chopped</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat the oil in a heavy bottomed (I used stainless steel pan) and cook onion and pepper for 2 - 3 min, until soft. Toss in the garlic and jalapeno and cook until the vegetables begin to color.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the sugar and tomatoes, and cook over medium heat for 3 - 4 min, until the mixture is slightly pulpy. Season well.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Using a wooden spoon, make 4 indentations in the tomato mixture and crack an egg into each one. Reduce the heat, cover the pan, and cook until the whites are set. Scatter with the parsley and serve with crusty fresh bread.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/shakshouka-1.jpg" alt="Shakshouka" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/shakshouka-2.jpg" alt="Shakshouka" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

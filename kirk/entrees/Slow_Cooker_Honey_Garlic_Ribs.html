@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Easy Honey Garlic Slow Cooker Ribs</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Slow Cooker Honey Garlic Ribs</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 (2 1/2 - 3 lb) rack of pork ribs, halved</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS salt</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS pepper</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS paprika</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS chili powder</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup honey</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup soy sauce</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">10 cloves garlic, minced</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Season ribs evenly with salt, pepper, paprika, and chili powder. Rub in on all sides.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Add honey, soy sauce, and garlic to a large slow cooker.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Transfer the ribs to slow cooker and turn them over in sauce until coated. Position the ribs so they are standing up, with the meatier side down, and so the meat side is against the walls of the slow cooker, with the bone sides facing in.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Cover and cook on high for 4 hours, or low for 7 - 8 hours. (Ours was on low for 5 hours)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- *** Try the rub we have in the pantry in place of the rub listed above ***</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/honey_garlic_ribs.jpg" alt="Easy Honey Garlic Slow Cooker Ribs" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/slow_cooker.jpg" alt="Slow Cooker" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

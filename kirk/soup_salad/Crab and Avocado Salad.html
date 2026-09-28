@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crab and Avocado Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Crab and Avocado Salad</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Avocado</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 TBS Mayonnaise</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Cups Watercress, Chopped (can substitute arugula)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Cumin</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Paprika</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">16 oz Canned Crab (last time got cheep stuff, next time try lump crab)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Stalk Medium Celery</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Fresh Lime Juice</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large bowl, mix mayo, lime juice, cumin and paprika</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add crabmeat and celery. Mix well; add salt and freshly ground pepper to taste.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Gently stir in avocado cubes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Divide watercress on plates; top with salad</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/crab_and_avocado_salad-1.jpg" alt="Crab and Avocado Salad" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/crab_and_avocado_salad-2.jpg" alt="Crab and Avocado Salad" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

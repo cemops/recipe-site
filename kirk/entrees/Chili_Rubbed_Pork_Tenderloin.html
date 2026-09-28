@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chile Rubbed Pork Tenderloin</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+<!--end of Navigation bar-->
+
+<!--Header-->
+    <div id="header-placeholder">
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+<!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Chile Rubbed Pork Tenderloin</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Pork Tenderloin</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Olive Oil</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Fresh Oregano Leaves</div>
+            </p>
+
+            <h3>Rub:</h3>
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Brown Sugar, packed</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Chile Powder</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Ground Cumin</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 tsp Kosher Salt</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Garlic Powder</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Ground Black Pepper</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">In a small bowl, combine all Rub ingredients and mix with a fork.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Coat the tenderloin with olive oil and apply the Rub evenly.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Let the tenderloin stand at room temperature for 15-30 minutes.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Grill over direct medium heat, turning every 5 minutes, for 20 minutes until the internal temperature reaches 150°F.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove from grill and rest for 3-5 minutes.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Season with fresh oregano and slice into 1/2-inch pieces.</div>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chile_rubbed_pork1.jpg" alt="Chile Rubbed Pork Tenderloin" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chile_rubbed_pork2.jpg" alt="Chile Rubbed Pork Tenderloin" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+<!--Footer-->
+    <div id="footer-placeholder">
+    </div>
+    
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+<!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Kiwi Avocado and Tomato Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Kiwi Avocado and Tomato Salad</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><b>Kiwi Dressing:</b></div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Kiwi peeled and quartered</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Olive Oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Honey</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 TBS Apple Cider Vinegar</div>
+                <div class="list-todo-container"><b>Salad</b></div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 - 6 Cups Mixed Greens</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Avocados, Sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Cherry or Grape Tomatoes (from Buehlers tomatoe bar), halved</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Kiwi, Peeled, Sliced and Quartered (Consider Gold Kiwi with Green)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">P1/4 Cup Pepitas</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Goat Cheese</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt and Pepper to taste</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">To make dressing: Place all dressing ingredients into immersion blender bowl. Blend until smooth and place into container and refrigerate until ready to use.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place mixed greens, avocados tomatoes, kiwi, and pepitas into a large serving bowl. Plate and add goat cheese and dressing.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/kiwi_avocado_and_tomato_salad-1.jpg" alt="Kiwi Avocado and Tomato Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/kiwi_avocado_and_tomato_salad-2.jpg" alt="Kiwi Avocado and Tomato Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

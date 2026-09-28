@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Corn Chowder - Turkey / Chicken</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Corn Chowder - Turkey / Chicken</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tablespoons butter</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tablespoon olive oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 yellow onion, diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 large carrot, thinly sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">pinch of salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 to 3 cups diced or shredded cooked turkey</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 russet potatoes, peeled and cut into 1-inch cubes (you can also use small potatoes cut in 1-inch pieces)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon dried thyme</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1¼ teaspoons salt, or to taste</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 teaspoon fresh ground pepper, or to taste</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 can (14.75-ounces) cream style sweet corn</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 can (15.25-ounces) sweet corn, rinsed</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 cups low sodium chicken broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 cups 2% milk</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">chopped fresh parsley, for garnish</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat butter and olive oil in a large soup pot over medium-high heat.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add onions, sliced carrots, and pinch of salt; cook for 3 minutes, stirring occasionally.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in the turkey and potatoes; season with thyme, salt and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add cream style corn, sweet corn, chicken broth and milk; bring mixture to a boil over high heat.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Reduce heat to low and cover the pot; simmer for 20 minutes, stirring occasionally.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove from heat.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Let stand several minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Give it a stir and taste for seasonings; adjust accordingly.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Garnish with chopped parsley.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/corn_chowder_turkey_chicken-1.jpg" alt="Corn Chowder - Turkey / Chicken" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/corn_chowder_turkey_chicken-2.jpg" alt="Corn Chowder - Turkey / Chicken" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

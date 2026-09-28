@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sea Island Red Peas w/ Celery Leaf Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Sea Island Red Peas w/ Celery Leaf Salad</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cups dried Sea Island Red Peas or Black Eyed Peas</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp kosher salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 cloves garlic</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 sprigs thyme</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 fresh bay leaf</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup EVOO</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup finely chopped celery</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup celery leaves from inner leaves</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup finely chopped onion</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup finely chopped red bell pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS unsalted butter</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp coriander seeds</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup flat leaf parsley leaves</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS thinly sliced chives</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS finely grated lemon zest</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Fresh cracked black pepper</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place peas in a medium pt; cover with 6 cups water; let soak for 3 hours or overnight</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bring water with peas to a boil (do not drain); boil for 15 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Reduce heat to medium; gently simmer, adding water by 1/2 cupfuls as needed to keep peas covered, until peas are tender but still holding their shape, about 20 - 25</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove from heat and stir in 1 tsp salt. <em>DO AHEAD: Can be made 1 day ahead. Cover and chill. Rewarm before continuing, adding more water by 1/4 cupfuls if too thick.</em></div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Mince garlic w/ some salt into a coarse paste. Tie thyme and bay leave with kitchen twine to form bouquet garni.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat 1/4 Cup oil in a medium pot over medium heat</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/sea_island_red_peas_celery_leaf_salad-1.jpg" alt="Sea Island Red Peas w/ Celery Leaf Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/sea_island_red_peas_celery_leaf_salad-2.jpg" alt="Sea Island Red Peas w/ Celery Leaf Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

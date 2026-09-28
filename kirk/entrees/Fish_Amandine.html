@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fish Amandine</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Fish Amandine</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 4-oz fresh or frozen skinless tilapia, trout, or halibut fillets</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 Cup buttermilk</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 Cup panko bread crumbs or fine dry bread crumbs</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Tbs fresh parsley</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 tsp dry mustard</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 tsp salt</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 cup sliced almonds, coarsely chopped</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Tbs grated Parmesan Cheese</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Tbs butter</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/8 tsp crushed red pepper</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 lemon, cut into wedges to put on plates</div><br>
+            </p>
+        </div>
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Preheat oven to 450°F. Grease a shallow baking pan; set aside. Rinse fish; pat dry with paper towels.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Pour buttermilk into a shallow dish. In another shallow dish combine bread crumbs, parsley, dry mustard, and salt. Dip fish into buttermilk, then into crumb mixture, turning to coat. Place coated fish in the prepared baking pan.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Sprinkle fish with almonds and Parmesan; drizzle with melted butter. Sprinkle with crushed red pepper. Bake 4 to 6 minutes per 1/2" thickness of fish or until fish flakes easily when tested.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Nutrition Information -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+        
+        <div class="w3-col m8 w3-theme-l4">
+            <h3>Nutrition Per Serving:</h3>
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">209 cal.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">9 g total fat (3 g sat. fat)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">67 mg chol.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">302 mg sodium</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">7 g carb. (1 g fiber, 1 g sugars)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">26 g pro.</div><br>
+            </p>
+        </div>
+        
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/fish_amandine.jpg" alt="Fish Amandine" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/fish_amandine-2.jpg" alt="Fish Amandine-2" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

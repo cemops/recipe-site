@@ -1,0 +1,143 @@
+<!DO CTYPE html>
+<html>
+<head>
+    <title>Tomato Sauce Recipe</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Spaghetti Sauce</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3 6oz cans tomato paste</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3 8oz cans tomato sauce</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">7 Cups water</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup sugar</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt & Pepper</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Oregano</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Parsley flakes</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Garlic salt</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Cook on high, boil for 1/2 hour</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Simmer for 2 hrs.</div><br>
+             </p>
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/tomato_sauce.jpg" alt="Spaghetti Sauce" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/ingredients.jpg" alt="Spaghetti Sauce" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

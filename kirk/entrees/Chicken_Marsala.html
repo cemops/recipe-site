@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chicken Marsala</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Chicken Marsala by Chef John</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Skin-on, Boneless Chicken Breasts (I used skinless last time)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tsp Salt and Ground Black Pepper to Taste</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3 TBS Butter, Divided</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 TBS Olive Oil</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">5 White Mushrooms, Sliced</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Shallot, Minced</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 TBS All-purpose Flour</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup Marsala Wine</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Cups Chicken Stock</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 TBS Chopped Fresh Parsley</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tsp Cold Butter</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Season chicken breasts all over with salt and pepper.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Melt 1 1/2 TBS butter and olive oil in a skillet over medium heat. Cook chicken breasts skin side down until browned, about 5 min. Flip and cook until breasts are almost cooked through, about 5 more min. Transfer to a plate.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Melt 1 1/2 TBS butter in same skillet over medium high heat. Saute mushrooms with a pinch of salt and a pinch of pepper until mushrooms are golden, 5 - 7 min. Add minced shallot; cook and stir until softened, 2 to 3 min. Sprinkle flour over the top and cook and stir until the bitterness of the flour cooks off, 3 to 4 min.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Pour wine into skillet and bring to a boil; cook and stir until wine reduces and sauce thickens, 3 to 4 min. Add chicken stock; bring to a simmer and cook until slightly reduced, 3 - 5 min.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Return chicken breasts to skillet, reduce heat to low, and cook chicken, turning once, until no longer pink in the center and juices run clear, about 10 min. Internal temp should read 165 degrees.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Move chicken to one side of the skillet and tilt the skillet so that the sauce pools at the bottom. Stir parsley and 1 tsp cold butter into the sauce, stirring constantly, until sauce is shiny and butter is completely melted. Transfer chicken to plates and spoon mushrooms and sauce over the top.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chicken_marsala.jpg" alt="Chicken Marsala" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chicken_marsala-2.jpg" alt="Chicken Marsala" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

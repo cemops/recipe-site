@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chicken Stroganoff</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Chicken Stroganoff</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 Bacon Strips, diced</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Lb boneless, skinless chicken breast</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Medium onion, chopped</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Cans (4 1/2 oz each) sliced mushrooms, drained. OR, 2 8oz packages fresh mushrooms.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1/2 Cups chicken broth</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Garlic cloves, minced</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 tsp Salt</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/8 tsp Paprika</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Pepper to taste</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 TBS all-purpose flour</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup sour cream</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Hot Cooked noodles</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Additional paprika, as needed</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- In a skillet, cook bacon over medium heat until crisp. Remove to paper towels reserving 2 TBS of drippings.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- In the drippings, cook the chicken, onion and mushrooms until the chicken is no longer pink. If using fresh mushrooms, cook those first for about 10 min. then ad the chicken and onion.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Add broth, garlic, salt, paprika, pepper and bacon. Bring to a boil, reduce heat, cover and simmer for 10 min.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Combine flour and sour cream until smooth, add to the skillet.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Bring to a boil, cook and stir for 2 min. or until thickened.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Serve over noodles, sprinkle with paprika if desired.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chicken_stroganoff.jpg" alt="Chicken Stroganoff" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/noodles.jpg" alt="Noodles" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Beef Daube Provencal</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+
+<!-- Header -->
+        <!--Header-->
+        <div id="header-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+        </script>
+        <!--end of header-->
+
+
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Beef Daube Provencal</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tsp EVOO</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">12 Garlic Cloves, Crushed</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 (2 lb) Boneless Chuck Roast, Trimmed and Cut into 2" Cubes</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1/4 tsp Salt, Divided</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 tsp Ground Pepper, Divided</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup Red Wine</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Cups Chopped Carrot</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1/2 Cups Chopped Onion</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 Cup Beef Broth</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 TBS Tomato Paste</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tsp Chopped Fresh Rosemary</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tsp Chopped Fresh Thyme</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Dash of Ground Cloves</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 - 14.5 oz Can Diced Tomatoes</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Bay Leaf</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 Cups Uncooked Noodles (3 Cups Cooked Medium Noodles)</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Preheat oven to 300 degrees</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Heat a small Dutch Oven over low heat. Add oil and garlic and cook 5 min. Remove garlic with a slotted spoon, set aside.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Increase heat to medium - high, add beef, sprinkle with 1/2 tsp salt and 1/4 tsp black pepper. Cook 5 min., browning on all sides. Remove beef from pan.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Add wine to pan; bring to a boil, scraping pan to loosen browned bits. Add reserved garlic, beef, remaining salt and pepper, and remaining ingredients through the Bay Leaf, and bring to a boil.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Cover and bake at 300 degrees for 2 1/2 hours or until beef is tender. Discard bay leaf, serve over noodles.</div>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <img src="/kirk/images/your_recipe_image.jpg" alt="Beef Daube Provencal" style="width:100%">
+    </div>
+</div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

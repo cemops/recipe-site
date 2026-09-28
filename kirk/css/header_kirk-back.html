@@ -1,0 +1,102 @@
+<!DOCTYPE>
+
+<!-- Header -->
+
+<script>
+    let link = document.createElement("link");
+    link.rel = "icon";
+    link.type = "image/jpg";
+    link.href = "/kirk/images/kr.jpg"; // Adjust path as needed
+    document.head.appendChild(link);
+</script>
+
+<Header class="w3-container w3-padding" style="margin-top: 30px;"id="myHeader">
+ <div class="w3-row w3-theme-d1">
+  
+  <div class="w3-col m3 w3-container w3-center" style="margin-top: 30px;">
+   <img src="/kirk/images/patio.jpg" width="100%"  alt="Patio">
+  </div>
+  
+  <div class="w3-col m6 w3-container w3-center" style="margin-top: 30px;">
+    <h1>Welcome to Kirk's Recipes</h1> <br>
+     <h2>Enjoy!</h2>
+     
+<!-- Keep Screen Awake -->
+ <button id="wakeLockButton">Keep Screen Awake</button>
+
+<script>
+    let wakeLock = null;
+
+    async function requestWakeLock() {
+        try {
+            // Ensure any previous wake lock is released
+            if (wakeLock !== null) {
+                wakeLock.release();
+            }
+            // Request a new wake lock
+            wakeLock = await navigator.wakeLock.request('screen');
+            console.log('Wake Lock is active');
+        } catch (err) {
+            console.error(`${err.name}, ${err.message}`);
+        }
+    }
+
+    document.getElementById('wakeLockButton').addEventListener('click', () => {
+        if (!wakeLock) {
+            requestWakeLock();
+        }
+    });
+
+    document.addEventListener('visibilitychange', async () => {
+        if (document.visibilityState === 'visible' && wakeLock === null) {
+            await requestWakeLock();
+        }
+    });
+
+    // Add a release function for when the page is hidden or user closes it
+    window.addEventListener('unload', () => {
+        if (wakeLock !== null) {
+            wakeLock.release();
+            wakeLock = null;
+        }
+    });
+</script>
+<!-- End Keep Screen Awake -->
+
+  </div>
+  
+  <div class="w3-col m3 w3-container w3-center" style="margin-top: 30px;">
+   <img src="/kirk/images/grill.jpg" width="100%" height="auto" alt="Grill">
+  </div>
+  
+ </div>
+</Header>
+	
+	<!--This goes after the 'nav' in the <body> -->
+				<!--Header-->
+		<div id="header-placeholder">
+		
+		</div>
+		
+		<script>
+		$(function(){
+				$("#header-placeholder").load("/kirk/css/header_kirk.html");
+		});
+		</script>
+  
+  <script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'robertsgroup.cc';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+		<!--end of header-->

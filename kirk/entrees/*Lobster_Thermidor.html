@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lobster Thermidor</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Lobster Thermidor</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 lb cooked lobster (or 4 lobster tails)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tbsp butter</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 whole shallot, finely diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup dry white wine</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup heavy cream</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp whole grain mustard</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tbsp chives (or green onions)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tbsp fresh lemon juice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 whole egg yolk</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup grated parmesan cheese</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt & pepper to taste</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cut lobster in half lengthwise; remove meat, chop, and set aside.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Melt butter over medium heat; sauté shallot until tender.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add white wine and reduce by 3/4.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add heavy cream and reduce by 1/2.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in mustard, lemon juice, salt, and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Toss lobster meat with the cream sauce, egg yolk, parmesan, and chives.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place lobster shells on a baking dish and fill with mixture; top with remaining parmesan.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bake at 400°F until bubbling and golden brown.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/lobster_thermidor-1.jpg" alt="Lobster Thermidor" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/lobster_thermidor-2.jpg" alt="Lobster Thermidor" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

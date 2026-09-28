@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Balsamic Roasted Beets</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Balsamic Roasted Beets</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Beets, Peeled &amp; Diced (about 3 Cups)*</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS EVOO</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Balsamic Vinegar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Honey</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat oven to 425 degrees</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Grease a large baking dish</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Toss beets with 1 TBS olive oil and 1/4 tsp salt, spread onto greased baking dish in an even layer.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bake for 15 - 20 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir and bake for 10 min. more until beets are soft.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Mix together balsamic and honey</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">After 30 min. remove beets from the oven and add the honey/vinegar mixture to the baking dish. Stir until evenly coated.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Return to the oven for 10 min., stirring once half way through. Roast until the balsamic/honey coats the beets.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove from the oven and serve warm</div>
+            </p>
+
+            <p>** Instead of peeling and cutting the beets, you could roast them whole in the following manner:</p>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Wrap beets individually in foil and set on a baking sheet.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Roast in an oven set to 450 degrees until beets are soft to the touch, 50 - 70 min. depending on the size of the beets.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove the skin from the beets with your hands or paper towel. (at this point you can store the roasted beets until later when you're ready to add the rest of the ingredients, dice and roast)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Dice and toss with recipe ingredients.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Roast for 10 - 15 min. at 450 degrees until beets are soft and the balsamic mixture is thick and coats the beets.</div>
+            </p>
+
+            <p><strong>NOTES:</strong><br>
+            The size of the beets are cut to make a difference in roasting time. Please be aware of this and check your beets after 15 min of cooking to ensure they are not getting overdone!</p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/balsamic_roasted_beets-1.jpg" alt="Balsamic Roasted Beets" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/balsamic_roasted_beets-2.jpg" alt="Balsamic Roasted Beets" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

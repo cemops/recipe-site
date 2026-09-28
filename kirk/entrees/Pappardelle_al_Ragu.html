@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pappardelle al Ragu</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Pappardelle al Ragu</h1>
+            <p><em>Servings: 4–6 | Prep: 20 min | Cook: 2 hours</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 Tbs Butter</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 Tbs Olive Oil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 oz Pancetta, diced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 small onion, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 celery stalk, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 carrot, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 garlic cloves, crushed</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 lb lean ground beef</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup beef stock (plus more if needed)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 Tbs Tomato paste</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 14 oz can diced tomatoes (fire roasted optional)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Salt & Pepper, to taste</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/3 cup whole milk, warmed</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 lb package of pappardelle (wide noodles)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Parmesan cheese, grated to serve</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Melt butter with oil in a deep, heavy-bottomed saucepan. Cook pancetta 1–2 min.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add onion, celery, carrot, and garlic. Cook, stirring occasionally, 10 min until softened but not browned.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> <strong>Optional:</strong> Cook meat separately to drain excess fat, then stir in and cook until evenly browned (~10 min).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add stock, tomato paste, and diced tomatoes. Season with salt and pepper. Bring to a boil.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Reduce heat to very low. Cover and simmer gently 1.5 hours, stirring occasionally, adding more stock if necessary.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in warmed milk, cover, and simmer another 30 min.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cook pappardelle according to package directions. Serve with sauce and grated Parmesan.</div>
+                </div>
+            </div>
+
+            <!-- Tips Section -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Tips for Perfect Ragu</h3>
+                    <ul>
+                        <li>Cooking the meat separately can help reduce excess grease for a cleaner sauce.</li>
+                        <li>Maintain very low heat during simmering to prevent sauce from scorching.</li>
+                        <li>Stir occasionally to keep the ragu smooth and prevent sticking.</li>
+                        <li>Use whole milk for a richer finish; add gradually to avoid curdling.</li>
+                        <li>Fire-roasted diced tomatoes add extra depth of flavor.</li>
+                        <li>Resting the sauce for a few minutes before serving helps flavors meld beautifully.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m3"><br></div>
+
+        <div class="w3-col m6 w3-center">
+            <img src="/kirk/images/pappardelle_ragu.jpg" alt="Pappardelle al Ragu" style="width:90%">
+        </div>
+
+        <div class="w3-col m3"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

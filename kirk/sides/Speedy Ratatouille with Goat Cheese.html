@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Speedy Ratatouille with Goat Cheese</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Speedy Ratatouille with Goat Cheese</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup extra-virgin olive oil, plus more for drizzling</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 pound eggplant, peeled and cut into 1-inch dice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5 large garlic cloves, minced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt and freshly ground black pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 zucchini, cut into 1/2-inch dice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 yellow squash, cut into 1/2-inch dice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 large onion, cut into 1/2-inch dice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 red bell pepper, cut into 1/2-inch dice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 pounds tomatoes, cored and finely chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup loosely packed shredded basil leaves</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 teaspoon finely grated lemon zest</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 teaspoon fresh lemon juice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup crumbled aged goat cheese</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large enameled cast-iron casserole or Dutch oven, heat 1/4 cup of the olive oil until shimmering. Add the eggplant and cook over moderately high heat, stirring occasionally, until almost tender, about 5 minutes. Add one-third of the garlic, season with salt and black pepper and cook for 1 minute. Using a slotted spoon, transfer the eggplant to a plate.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add 2 tablespoons of the olive oil to the casserole along with the zucchini and yellow squash and cook over moderate heat until lightly browned in spots, about 5 minutes. Add another one-third of the garlic, season with salt and black pepper and cook for 1 minute. Add the vegetables to the eggplant.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the remaining 2 tablespoons of oil to the casserole, along with the onion and bell pepper. Cook over moderate heat until softened, about 7 minutes. Add the remaining garlic, season with salt and black pepper and cook for 1 minute. Add the tomatoes, two-thirds of the basil and the reserved vegetables and cook over moderate heat until the tomatoes have broken down and the vegetables are tender, about 15 minutes. Stir in the remaining basil along with the lemon zest and juice. Transfer to bowls and sprinkle with the goat cheese. Drizzle with olive oil and serve.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><strong>Make Ahead:</strong> The ratatouille can be refrigerated overnight.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/speedy_ratatouille_with_goat_cheese-1.jpg" alt="Speedy Ratatouille with Goat Cheese" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/speedy_ratatouille_with_goat_cheese-2.jpg" alt="Speedy Ratatouille with Goat Cheese" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

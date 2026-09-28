@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mediterranean Tomato Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Mediterranean Tomato Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 TBS Olive Oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Medium Yellow Onions, thinly sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Curry Powder</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Red Curry Powder</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Ground Coriander</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Ground Cumin</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 to 1/2 tsp Red Pepper Flakes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 15 oz Can Diced Tomatoes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 28 oz can Diced or Plum Tomatoes (I used plum last time)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5 1/2 Cups Chicken Broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 14 oz can Coconut Milk</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add - ins: Choose any you'd like - Cooked brown rice, lemon wedges, toasted almond slices, fresh thyme or oregano, oregano pesto, poached egg</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat oil over medium heat. Add the onions and salt. Cook, stirring occasionally, until the onions really soften up and start to turn brown, 10 - 12 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in the curry powder, coriander, cumin and red pepper flakes and cook 30 seconds, stirring constantly. Add the tomatoes with juices from the cans, and broth. Simmer for 15 min, then puree with a hand blender until smooth.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the coconut milk to taste</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/mediterranean_tomato_soup-1.jpg" alt="Mediterranean Tomato Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/mediterranean_tomato_soup-2.jpg" alt="Mediterranean Tomato Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

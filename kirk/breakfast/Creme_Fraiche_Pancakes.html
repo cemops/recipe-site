@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Crème Fraîche Pancakes</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!--end of Navigation bar-->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!--end of Header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+        <h1>Crème Fraîche Pancakes</h1>
+        <p><em>A delicious breakfast treat with a rich flavor from crème fraîche.</em></p>
+    </div>
+</div>
+
+<!-- First Row -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+    
+    <!-- Full Ingredients Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Full Ingredients:</h3>
+        <!-- Clear All Button -->
+        <button onclick="clearAllCheckboxes();">Clear All</button>
+        <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 Cups Flour</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Tbs Sugar</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Baking Powder</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Kosher Salt</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Whole Milk</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Crème Fraîche</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Sour Cream</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Eggs</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tsp Vanilla</div>
+        </p>
+    </div>
+    
+    <!-- Half Ingredients Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Half Ingredients:</h3>
+        <!-- Clear All Button -->
+        <button onclick="clearAllCheckboxes();">Clear All</button>
+        <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 Cups Flour</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 Tbs Sugar</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Baking Powder</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Kosher Salt</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Whole Milk</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Crème Fraîche</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/8 Cup Sour Cream</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Egg</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 tsp Vanilla</div>
+        </p>
+    </div>
+
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Second Row for Instructions -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+    
+    <!-- Instructions Column -->
+    <div class="w3-col m8 w3-theme-l4">
+        <h3>Instructions:</h3>
+        <!-- Clear All Button -->
+        <button onclick="clearAllCheckboxes();">Clear All</button>
+        <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Mix flour, sugar, baking powder, and salt together.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2. In a separate bowl, mix milk, crème fraîche, sour cream, eggs, and vanilla.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Slowly combine the wet ingredients with the dry ingredients until you reach the desired consistency.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Cook on a skillet with butter until golden brown.</div>
+        </p>
+    </div>
+    
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Image Row -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+    
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/creme_fraiche_pancakes.jpg" alt="Crème Fraîche Pancakes" style="width:90%">
+    </div>
+    
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/creme_fraiche_pancakes2.jpg" alt="Crème Fraîche Pancakes" style="width:90%">
+    </div>
+    
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

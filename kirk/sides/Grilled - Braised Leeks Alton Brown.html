@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grilled - Braised Leeks: Alton Brown</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Grilled - Braised Leeks: Alton Brown</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 large leeks, dark green sections removed</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tablespoons bacon drippings</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heavy pinch kosher salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon balsamic vinegar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Crumbled bacon and goat cheese, as an accompaniment, optional</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat grill to high.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cut each leek in half lengthwise and rinse thoroughly to remove all dirt and sand. Pat dry.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Brush the cut side of each leek half with the bacon drippings and sprinkle with kosher salt. Grill over direct, high heat, cut side down, with lid closed, approximately 6 to 7 minutes or until grill marks appear.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove the leeks to a sheet of aluminum foil and lay cut side up. Brush the leeks with balsamic vinegar.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Reassemble the leek halves together, wrap tightly in foil, and set back on the grill away from direct heat for 10 to 12 minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove the leeks from the foil and serve immediately, as is or with crumbled bacon and goat cheese.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/grilled_braised_leeks-1.jpg" alt="Grilled - Braised Leeks" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/grilled_braised_leeks-2.jpg" alt="Grilled - Braised Leeks" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

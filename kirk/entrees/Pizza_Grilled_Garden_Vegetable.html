@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Garden Vegetable Grilled Pizza</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!-- End of Navigation bar -->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!-- End of Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Garden Vegetable Grilled Pizza</h1>
+        </div>
+    </div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 cups fresh baby spinach</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp olive oil</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 recipe Homemade pizza crust OR Boboli bread</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 Tbs grated Parmesan cheese</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 cloves garlic, thinly sliced</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 cups chunky tomato sauce</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">12 oz bite-size fresh mozzarella cheese balls, drained, thinly sliced, and patted dry</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 cups grilled corn kernels</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 cups grilled eggplant</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 slices of bacon, crisp cooked, crumbled</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 lb assorted heirloom tomatoes, cut up</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">small fresh basil leaves</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Ground Pepper</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sea Salt</div><br>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1. In a small bowl combine spinach, 1 tsp oil and a dash of salt.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Using Boboli crust, brush with olive oil and grill on both sides for 2 min.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Sprinkle 1 Tbs of Parmesan cheese and one clove garlic over crust; top with 1/4 cup of tomato sauce. Add 1/4 cup of spinach mixture, 2 oz of the mozzarella cheese, 1/4 cup of corn, 1/4 cup of eggplant and 1 slice of the crumbled bacon. Grill pizza 3 to 5 min more or until crust is crisp and cheese is melted.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Before serving, top pizzas with tomato, basil, and pepper (Optional sea salt).</div><br>
+            </p>
+        </div>
+
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    </div>
+    
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!-- End of Footer -->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>

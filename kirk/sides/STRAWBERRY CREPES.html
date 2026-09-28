@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strawberry Crepes</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Strawberry Crepes</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cups Frozen Strawberries, thawed</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Sugar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Orange Zest, Optional</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Cups Fresh Strawberries, sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Large Eggs</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Butter, Melted and Slightly Cooled</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cups Milk</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Vanilla</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Sugar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 Cups All Purpose Flour</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <strong>STRAWBERRY FILLING:</strong><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Gently puree thawed strawberries. Stir in sugar, orange zest and freshly sliced strawberries. Serve strawberry filling at room temp.</div>
+
+                <strong>CREPES:</strong><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add ingredients to bowl and use an emulsion blender to blend until smooth.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat an 8" skillet over medium heat and lightly coat with cooking spray.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Pour 1/4 cup of batter in the center of the skillet and rotate to cover the bottom of the skillet in a thin layer.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cook until light brown and the top begins to dry out, approximately 1 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Flip and cook and additional 30 seconds.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Repeat with remaining batter. Stack completed crepes on a plate. If the crepes are sticking together, put wax paper between the crepes. You can put crepes in a 200 degree oven to keep warm until ready to serve.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Fill each crepe with strawberry filling and roll up. Serve with whipped cream.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/strawberry_crepes-1.jpg" alt="Strawberry Crepes" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/strawberry_crepes-2.jpg" alt="Strawberry Crepes" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

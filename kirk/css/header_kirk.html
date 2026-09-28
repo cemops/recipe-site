@@ -1,0 +1,74 @@
+<!-- Header -->
+<header class="w3-container w3-padding" style="margin-top: 30px;" id="myHeader">
+  <div class="w3-row w3-theme-d1">
+
+    <div class="w3-col m3 w3-container w3-center" style="margin-top: 30px;">
+      <img src="/kirk/images/patio.jpg" width="100%" alt="Patio">
+    </div>
+
+    <div class="w3-col m6 w3-container w3-center" style="margin-top: 30px;">
+      <h1>Welcome to Kirk's Recipes</h1>
+      <h2>Enjoy!</h2>
+
+      <!-- Keep Screen Awake (handy mid-recipe). The button only appears on
+           browsers that support the Wake Lock API over HTTPS. -->
+      <button id="wakeBtn" class="w3-button w3-border" type="button" hidden>Keep Screen Awake</button>
+      <script>
+      (function () {
+        var btn = document.getElementById('wakeBtn');
+        if (!btn || !('wakeLock' in navigator)) { return; } // unsupported: stays hidden
+        btn.hidden = false;
+
+        var wakeLock  = null;
+        var wantAwake = false;
+
+        function setLabel() {
+          btn.textContent = wantAwake ? 'Screen staying awake — tap to stop' : 'Keep Screen Awake';
+          btn.classList.toggle('w3-theme-d5', wantAwake);
+        }
+
+        async function acquire() {
+          try {
+            wakeLock = await navigator.wakeLock.request('screen');
+            // The handle becomes stale once released (e.g. when the tab hides);
+            // null it so we know we can re-acquire.
+            wakeLock.addEventListener('release', function () { wakeLock = null; });
+          } catch (err) {
+            wantAwake = false;
+            setLabel();
+            console.error(err.name + ': ' + err.message);
+          }
+        }
+
+        btn.addEventListener('click', async function () {
+          wantAwake = !wantAwake;
+          setLabel();
+          if (wantAwake) {
+            await acquire();
+          } else if (wakeLock) {
+            wakeLock.release();
+            wakeLock = null;
+          }
+        });
+
+        // The browser drops the lock when the page is hidden; re-acquire when it
+        // comes back, but only if the user had it switched on.
+        document.addEventListener('visibilitychange', function () {
+          if (wantAwake && wakeLock === null && document.visibilityState === 'visible') {
+            acquire();
+          }
+        });
+
+        setLabel();
+      })();
+      </script>
+
+    </div>
+
+    <div class="w3-col m3 w3-container w3-center" style="margin-top: 30px;">
+      <img src="/kirk/images/grill.jpg" width="100%" height="auto" alt="Grill">
+    </div>
+
+  </div>
+</header>
+<!-- end Header -->

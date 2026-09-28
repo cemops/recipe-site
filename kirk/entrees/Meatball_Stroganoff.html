@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Meatball Stroganoff</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Meatball Stroganoff</h1>
+            <p><em>Comfort-food classic with a creamy beefy sauce</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3 cups egg noodles</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp olive oil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 package (12 oz) frozen meatballs or 1 lb fresh meatballs</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 1/2 cups beef broth</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp dried parsley flakes</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/4 tsp dried basil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/4 tsp dried oregano</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/4 tsp salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/4 tsp black pepper</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup heavy whipping cream</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3/4 cup sour cream</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cook egg noodles according to package directions until al dente; drain and set aside.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a large skillet, heat olive oil over medium-high heat. Brown the meatballs, then remove from the pan.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add beef broth to the skillet, stirring to loosen browned bits from the bottom.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add parsley, basil, oregano, salt, and pepper. Bring to a boil and cook 5–7 minutes, until liquid reduces to about 1/2 cup.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Return meatballs to the pan. Add cooked noodles and heavy cream.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Bring to a gentle boil, then reduce heat and simmer, covered, for 3–5 minutes until slightly thickened.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in sour cream and heat through. Do not boil after adding sour cream.</div>
+                </div>
+            </div>
+
+            <!-- Notes -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Notes</h3>
+                    <ul>
+                        <li>This recipe pairs perfectly with homemade meatballs.</li>
+                        <li>Use your favorite meatball recipe here: 
+                            <a href="/kirk/jelayne/Meatballs.html">Meatballs Recipe</a>
+                        </li>
+                        <li>If the sauce gets too thick, thin with a splash of beef broth or cream.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row (Optional) -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m3"><br></div>
+
+        <div class="w3-col m6 w3-center">
+            <img src="/kirk/images/meatball_stroganoff.jpg" alt="Meatball Stroganoff" style="width:90%">
+        </div>
+
+        <div class="w3-col m3"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

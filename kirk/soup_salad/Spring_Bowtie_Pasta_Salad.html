@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Spring Bowtie Pasta Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Spring Bowtie Pasta Salad</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8 oz ( I just used the 12 oz box ) bowtie pasta</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 lb fresh asparagus spears (12 - 15 spears), trimmed and cut into 2 inch pieces</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/4 Cup frozen peas</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup shaved fresh Parmesan cheese</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup fat-free lime-basil vinaigrette (or stir 1 Tbs lime juice in 1/4 Cup olive oil vinaigrette)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp pepper</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cook pasta according to directions without the salt and fat.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the Asparagus and Peas during the last 2 min of cooking.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Drain pasta mixture; rinse under cold water.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine mixture and remaining ingredients in a medium bowl, tossing well.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/spring_bowtie_pasta_salad-1.jpg" alt="Spring Bowtie Pasta Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/spring_bowtie_pasta_salad-2.jpg" alt="Spring Bowtie Pasta Salad" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE>
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-8">
+ <hr>
+  <h4 class="w3-center">Kirk Roberts<br>Recipe Stack</h4>
+  <h4 class="w3-center">Email me at:<a href="mailto:kirkdrob@gmail.com?Subject=Recipe" target="_top"> Kirkdrob@gmail.com</a></h4>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <!--<div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>-->
+  
+<script>
+  // Navigation Bar
+ function myFunction() {
+  var x = document.getElementById("smallBar");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// End of Navigation Bar
+</script>
+</footer>
+	
+	<!--This goes after the content in the <body> -->
+				<!--Footer-->
+		<div id="footer-placeholder">
+		
+		</div>
+		
+		<script>
+		$(function(){
+				$("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+		});
+		</script>
+		<!--end of Footer-->

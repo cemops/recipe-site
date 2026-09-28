@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Breakfast Potatoes Recipe</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <style>
+        body {font-family: Arial, sans-serif;}
+        .container {padding: 20px;}
+        .list-todo-container {margin-bottom: 10px;}
+        button {margin-bottom: 10px;}
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<div id="nav-placeholder"></div>
+<script>
+    $(function(){
+        $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+</script>
+
+<!-- Header -->
+        <!--Header-->
+        <div id="header-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+        </script>
+        <!--end of header-->
+
+<!-- Recipe Content -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Recipe Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Breakfast Potatoes</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients and Instructions Rows -->
+    <div class="w3-row">
+        
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+        
+        <!-- Ingredients Section -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 3 lbs red potatoes, diced</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 3 cloves garlic, minced</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 small onion, chopped</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 small green bell pepper, chopped</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 small red bell pepper, chopped</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup olive oil</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 stick butter, melted</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp seasoned salt</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp cayenne pepper</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Kosher salt & black pepper</div><br>
+            </p>
+        </div>
+
+        <!-- Instructions Section -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Preheat oven to 425°F (220°C).</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Toss all ingredients in a large bowl.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Bake for 20-25 minutes, shaking pan twice.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Raise heat to 500°F (260°C), bake for 10-15 minutes until crisp.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5. Sprinkle more salt & pepper before serving.</div><br>
+            </p>
+        </div>
+
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>

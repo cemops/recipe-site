@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bacon Wrapped Onion Bombs</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+
+<!-- Header -->
+        <!--Header-->
+        <div id="header-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+        </script>
+        <!--end of header-->
+
+
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Bacon Wrapped Onion Bombs</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 lb Beef</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Egg</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 Cup Bread Crumbs</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 Cup Onion</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 tsp Salt and Pepper</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Dash Garlic Powder</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 Cup BBQ Sauce - Sweet Baby Rays Vidalia Onion</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 Cup Milk</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Medium Onions</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Bacon - thin sliced, long (not center cut)</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1. Combine stuffing ingredients.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2. Cut tops and bottoms from onions and cut halfway through the center.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3. Remove outer layer and separate 3 layers from each onion.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4. Stuff each onion layer full with meat mixture.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">5. Wrap with bacon completely, hold together with toothpicks.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">6. Smoke for 2 hrs at 220 - 250 degrees.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">7. In the last 15 min baste with BBQ sauce and let caramelize.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">8. Cook to 165 degrees.</div>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <img src="bacon_wrapped_onion_bombs.jpeg" alt="Bacon Wrapped Onion Bombs" style="width:100%">
+    </div>
+</div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pineapple Shrimp</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Pineapple Shrimp</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <strong>For the Sauce:</strong>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Pineapple Juice</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Chicken Broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Soy Sauce</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Siracha</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Light Brown Sugar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Rice Wine Vinegar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Minced Ginger</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Cornstarch</div>
+            </p>
+            <p>
+                <strong>For the Shrimp:</strong>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 lb Medium Shrimp, Peeled, Deveined, and Patted Dry</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Kosher Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Freshly Ground Pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 tsp EVOO</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Red Bell Pepper, Chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cups Fresh Pineapple Cubes</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a saucepan, combine the pineapple juice, chicken broth, soy sauce, Sriracha, brown sugar, vinegar, ginger, and cornstarch over medium heat. Let simmer until thickened and reduced by a third, about 7 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Season the shrimp with salt and pepper. In a large skillet, heat 3 tsp olive oil over medium heat. Add the shrimp and cook, flipping once, until pink, 2 min total. Transfer to a plate.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the teaspoon of oil to the same pan. Add the bell pepper and cook until just cooked, about 3 min. Add the pineapple and the sauce and turn the heat up to high. Once the mixture is simmering, add the shrimp and stir to combine. Serve right away with green onions on top.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/pineapple_shrimp-1.jpg" alt="Pineapple Shrimp" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/pineapple_shrimp-2.jpg" alt="Pineapple Shrimp" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tomato Provencale</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Tomato Provencale</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Medium - Large Firm Ripe Tomatoes x 4 <i>(try using vine ripe tomatoes)</i></div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bread Crumbs - 4 Heaping TBS Whole Wheat</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Olive Oil - 4 TBS</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - Garlic Cloves, Crushed</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 TBS Finely Chopped Flat Leafed Parsley</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Finely Chopped Oregano</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 3 Basil Leaves to Finish</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Halve the tomatoes. Using a grapefruit spoon, scoop out the flesh and seed of the tomato. Sprinkle with salt and place upside down on paper towels for at least 15 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat the oven at 375 degrees. In a bowl, combine the bread crumbs, oil, garlic, and herbs. Season lightly.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Using the teaspoon, spread the mixture into the tomatoes, patting it in evenly.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place the tomatoes in a gratin dish large enough to accommodate them side by side, and still leave a little space between them.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sssssssssssx.&nbsp; &nbsp; A for 25 - 30 min, or until the tomatoes are tender but still hold their shape and the filling is golden. Garnish with snipped basil leaves and serve warm or at warm temp.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/tomato_provencale-1.jpg" alt="Tomato Provencale" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/tomato_provencale-2.jpg" alt="Tomato Provencale" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

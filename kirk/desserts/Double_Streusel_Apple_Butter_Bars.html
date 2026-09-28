@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Double Streusel Apple Butter Bars</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Double Streusel Apple Butter Bars</h1>
+            <p><em>Sweet, spiced, and crumbly</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cups all-purpose flour</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1½ cups old-fashioned oats</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> ½ cup raw pecans</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup brown sugar</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp baking powder</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp cinnamon</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> ¼ tsp nutmeg</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tsp vanilla extract</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp cold salted butter, thinly sliced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Apple butter (for filling)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Apples, sliced (for filling)</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat oven to 350°F. Line a 9" × 13" baking dish with parchment paper.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a food processor, pulse flour, oats, pecans, brown sugar, baking powder, cinnamon, and nutmeg until oats are mostly ground.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add cold butter and pulse until a crumbly dough forms. If dry, add 1 tbsp water.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Press ⅓ of the dough into the prepared baking dish.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Bake for 30 minutes or until lightly golden.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Spread apple butter evenly over the baked crust.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Arrange apples evenly over the apple butter.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Sprinkle remaining ⅔ of streusel dough over the apples.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Lay butter slices over the streusel.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Bake 30–40 minutes until topping is lightly golden.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cool completely before cutting into bars.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/apple_butter_bars1.jpg" alt="Apple Butter Bars" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/apple_butter_bars2.jpg" alt="Double Streusel Bars" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

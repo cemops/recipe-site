@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Honey Balsamic Sheet Pan Chicken</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Honey Balsamic Sheet Pan Chicken</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Balsamic Vinegar</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">6 TBS Honey</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3 TBS Olive Oil, divided</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 cloves Garlic, minced</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp dried Thyme</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 tsp dried Rosemary</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Red Chili Flakes</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 tsp Kosher Salt</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Black Pepper</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Chicken Breasts</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Red Potatoes, 1/8 th</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 pint Cherry Tomatoes</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 lb (three handfuls) Green Beans, trimmed</div><br>
+            </p>
+        </div>
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Preheat oven to 425 degrees</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Combine vinegar, honey, 1 TBS olive oil, garlic, thyme, rosemary, chili flakes, salt and pepper</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Pour the marinade and chicken in a bag and marinate for 30 min.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Place the potatoes on a sheet pan, drizzle with olive oil, season with salt and pepper, stir to coat. Bake for 25 min.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Remove the sheet pan and toss the green beans and tomatoes with the potatoes.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Place the chicken on the veggies and spread the marinade over both the chicken and veggies.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Return the sheet to the oven and cook for 40 min. basting at least once. Let chicken stand 5 min. before serving.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/honey_balsamic_chicken.jpg" alt="Honey Balsamic Sheet Pan Chicken" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/vegetables.jpg" alt="Vegetables" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

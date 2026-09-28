@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tonkotsu Ramen</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Tonkotsu Ramen</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <b>Tonkotsu Ramen:</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8 Cups Tonkotsu Pork Broth (See Recipe)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">12 oz Good Quality Dried Ramen Noodles</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Large or Extra Large Eggs</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 3 oz Enoki or other Mushrooms ( I used oyster last time)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Thinly Sliced Green Onions</div>
+
+                <br><b>Chashu Pork Belly</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 lb Pork Belly - rolled and tied</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Soy Sauce</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Sake</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Mirin</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Sugar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 3 Cloves Garlic - left whole</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Green Onions - coursely chopped</div>
+
+                <br><b>Soy Bacon Tare</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Slices Bacon</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Soy Sauce</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs Mirin</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs Sake</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Tbs Shiro Miso</div>
+
+                <br><b>Miso Tare</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Shiro Miso</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Sake</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Mirin</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Pinch Shichimi Togarashi - a Japanese Spice (optional)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 2 tps Kosher Salt - depending on how salty you like your ramen</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <b>Chashu Pork Belly</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine soy, sake, mirin, sugar, garlic and green onions in a zip lock bag big enough to hold the pork belly. Stick a straw in the bag and seal the ziplock bag up against it. Suck out as much of the air as you can and seal</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sous vide the pork for 10 - 11 hours at 170 degrees</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove pork from the bag, Discard the bag and marinade.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Let the chashu pork belly cool completely.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Slice across the chashu pork (so you get bacon like slices) - into 8 - 12 slices about 1/8 to 3/16 inches thick. Reserve. You won't need all of the pork for 4 servings.</div>
+
+                <br><b>Soy Bacon Tare</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine all the ingredients in a small sauce pan. Simmer at the lowest setting for about an hour. Top up with a bit of chicken stock if needed.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove the bacon</div>
+
+                <br><b>Miso Tare</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine all ingredients in a small sauce pan and simmer at the lowest setting for about 5 minutes</div>
+
+                <br><b>Medium Boiled Eggs</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bring enough water to cover the eggs to a boil. Prick the egg. Boil large eggs for 6 min &amp; 30 seconds.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Submerge the eggs in ice water to chill. Peel and cut in half right before you serve the ramen</div>
+
+                <br><b>Assemble the Tonkotsu Ramen</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Boil the ramen noodles in plenty of water as directed, usually 4 min. You don't need to salt the water.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cook the mushrooms alongside the noodles - you just want them softened</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Gently fry the chashu pork in a non - stick skillet until lightly browned</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place 1/4 of the tare in the bottom of 4 bowls</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Ladle in 1/2 cup of the tonkotsu broth into each of the bowls and stir to mix.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the noodles. Pour in another 1 1/2 cups of broth per bowl</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Top with the egg, mushrooms, pork and green onions</div>
+
+                <br><b>NOTES</b>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Use only 1 of the tare recipes or use your own.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">If you use the miso tare, you can salt your broth directly. That is easier than guessing how salty you want your tare.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">If you aren't up for making chashu pork you can substitute roasted pork shoulder. It would be an awesome us of a leftover pork roast.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/tonkotsu_ramen-1.jpg" alt="Tonkotsu Ramen" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/tonkotsu_ramen-2.jpg" alt="Tonkotsu Ramen" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

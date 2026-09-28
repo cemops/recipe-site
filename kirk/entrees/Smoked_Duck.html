@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smoked Duck</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Smoked Duck</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 5 - 6 Lb duck (purchased 3 days before to thaw in refrigerator)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Apple and/or Cherry Wood Chips</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Orange and/or mandarin oranges</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Onion</div><br>
+             <h4>Glaze:</h4>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Tbs Honey</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Tbs Molasses</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Tbs Orange Juice</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Tbs Balsamic Vinegar</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Zest of 1 Orange</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Pinch Salt and Pepper</div><br>
+             <h4>Dry Brine:</h4>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Tbs Honey</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Tbs Soy Sauce</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt and Pepper</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Thaw the duck in the refrigerator for up to 3 days.</div><br>
+             <h4>Day Before:</h4>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Trim the skin around the neck leaving a 1" flap, and remove the tips of the wings.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Remove the giblets and pat the duck dry with paper towels.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Slash the skin all the way through the fat layer without going through to the meat, in about 1" intervals to help the fat render out.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Brush with dry brine and season with salt and pepper on all sides.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Stuff the duck with quartered orange and onion.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Place on a metal cooling grate over a baking sheet and refrigerate overnight, uncovered.</div><br>
+             <h4>Cook Day:</h4>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Prepare smoker to cook at 300 - 325 degrees.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Glaze the duck, liberally.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Set High alarm to 157 degrees on the meat channel.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Set high alarm to 330 and low alarm to 295 on smoker channel.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Smoke for 2 1/2 hours.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Remove and rest duck for 20 min before slicing.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- If the duck starts to get too dark, cover with foil.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/smoked_duck.jpg" alt="Smoked Duck" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/duck_dish.jpg" alt="Duck Dish" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

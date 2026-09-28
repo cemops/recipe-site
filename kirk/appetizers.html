@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Appetizers</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</head>
+
+<body>
+	
+<!--Navigation bar-->
+<div id="nav-placeholder">
+
+</div>
+
+<script>
+$(function(){
+  $("#nav-placeholder").load("../css/nav_kirk.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+	<!-- Header -->
+<header class="w3-container w3-theme-d5 w3-padding" style="margin-top: 25px;" id="myHeader">
+  <div class="w3-center">
+     <h1>Welcome to Kirk's Recipes</h1><br>
+     <h2 style="font-style:italic">Enjoy!</h2>
+  </div>
+</header>
+
+<div class="w3-center w3-theme-d1">
+	<h1>Appetizers</h1>
+</div>
+
+<div>
+ <a href="appetizers">Appetizers</a>
+</div>
+
+<!-- <?php
+$dir = "/appetizers/";
+
+// Sort in ascending order - this is default
+$a = scandir($dir);
+
+// Sort in descending order
+$b = scandir($dir,1);
+
+print_r($a);
+print_r($b);
+?> -->
+
+<!--Quarters-->
+<!--<div class="w3-row">
+	
+ <div class="w3-quarter">
+	<br>
+ </div>
+
+<div class="w3-quarter w3-container w3-card w3-theme-l4">
+	<h3>INGREDIENTS</h3>
+	<ul>
+		<li>ingred</li>
+		<li>ingred</li>
+	</ul>
+</div>
+
+<div class="w3-quarter w3-container w3-card w3-theme-l4">
+	<h3>INSTRUCTIONS</h3>
+	<Ol>
+		<li>ingred</li>
+		<li>ingred</li>
+	</Ol>
+</div>
+
+<div class="w3-quarter">
+	<br>
+ </div>-->
+
+</div>
+
+
+<!-- Footer -->
+<footer class="w3-container w3-theme-dark w3-padding-16">
+  <h4 class="w3-center">Kirk Roberts<br>Recipe Stack</h4>
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  <div style="position:relative;bottom:55px;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-theme-light w3-padding">Go To Top</span>    
+    <a class="w3-text-white" href="#myHeader"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+      const f = document.getElementById('form');
+      const q = document.getElementById('query');
+      const google = 'https://www.google.com/search?q=site%3A+';
+      const site = 'robertsgroup.cc';
+
+      function submitted(event) {
+        event.preventDefault();
+        const url = google + site + '+' + q.value;
+        const win = window.open(url, '_blank');
+        win.focus();
+      }
+
+      f.addEventListener('submit', submitted);
+    </script>
+
+</body>
+</html>

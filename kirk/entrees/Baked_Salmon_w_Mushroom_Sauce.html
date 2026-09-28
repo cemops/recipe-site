@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Baked Salmon with Mushroom Cream Sauce</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Baked Salmon with Mushroom Cream Sauce</h1>
+            <p><em>Serves 4</em></p>
+			<p>Pairs well with <a href="https://www.robertsgroup.cc:8443/kirk/sides/Roasted_Potatoe-Carrot_Broccoli-Onion.html"</a>Roasted Potato-Carrot | Broccoli-Onions</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 1/2 lbs fresh salmon, skin on or off</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp unsalted butter</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cups sliced fresh mushrooms (cremini, button, or shiitake)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 green onions, chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp all-purpose flour</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tsp chopped fresh parsley</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 tsp salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup milk (whole or 2%)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/4 cup dry white wine <em>(or 2 tbsp water + 2 tbsp lemon juice)</em></div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat oven to 350°F (175°C).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cut salmon into 4 equal portions and pat dry.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Lightly butter a 13×9-inch baking dish and arrange salmon evenly.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Melt butter in a skillet over medium heat.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add mushrooms and green onions; sauté 5–7 minutes until tender.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in flour, parsley, and salt; cook 1 minute to form a roux.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Gradually whisk in milk; bring to a boil.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cook and stir until thickened, about 2–3 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in wine (or water and lemon juice) and simmer 1 minute.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Pour mushroom sauce evenly over the salmon.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Bake uncovered 20–25 minutes, until salmon flakes easily.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/salmon_mushroom1.jpg" alt="Baked Salmon with Mushroom Sauce" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/salmon_mushroom2.jpg" alt="Salmon Mushroom Cream Sauce" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+<!-- End Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Eggs Baked with Smoked Salmon</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!--end of Navigation bar-->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!--end of Header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+        <h1>Eggs Baked with Smoked Salmon</h1>
+        <p><em>A sophisticated and delicious breakfast or brunch recipe for seafood lovers.</em></p>
+    </div>
+</div>
+
+<!-- First Row -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+    
+    <!-- Ingredients Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Ingredients:</h3>
+        <!-- Clear All Button -->
+        <button onclick="clearAllCheckboxes();">Clear All</button>
+        <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1⁄2 tbsp. unsalted butter, melted</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">6 oz. thinly sliced smoked salmon</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3⁄4 cup heavy cream</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">4 eggs</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Kosher salt, to taste</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Freshly ground white pepper, to taste</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tbsp. freshly grated horseradish or prepared horseradish, drained</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2 chives, cut into 1″ pieces</div>
+        </p>
+    </div>
+
+    <!-- Instructions Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Instructions:</h3>
+        <!-- Clear All Button -->
+        <button onclick="clearAllCheckboxes();">Clear All</button>
+        <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Heat oven to 375°F. Grease four 6-oz. ramekins with melted butter and place them in a 9" x 13" baking dish lined with parchment paper.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Arrange the salmon along the bottom and sides of the ramekins, reserving 1 slice for garnish.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Pour 1 tbsp. cream into each ramekin and crack an egg on top; season with salt and pepper.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Place the baking dish in the oven and pour boiling water halfway up the sides of the ramekins. Bake for 15–17 minutes, until the egg whites are set but yolks remain soft.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">5. Whip the remaining cream until soft peaks form, then fold in horseradish and season with salt and pepper.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">6. Julienne the reserved slice of salmon and garnish the baked eggs with the salmon, horseradish cream, and chives before serving.</div>
+        </p>
+    </div>
+
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Image Row -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+    
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/eggs_baked_smoked_salmon.jpg" alt="Eggs Baked with Smoked Salmon" style="width:90%">
+    </div>
+    
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/eggs_baked_smoked_salmon2.jpg" alt="Eggs Baked with Smoked Salmon" style="width:90%">
+    </div>
+
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

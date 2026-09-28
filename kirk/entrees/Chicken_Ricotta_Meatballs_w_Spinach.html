@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chicken Ricotta Meatballs with Spinach</title>
+	 <link rel="stylesheet" href="kirk/css/kirk_style.css">
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+		<link rel="icon" href="kirk/images/kr.jpg" type="image/jpg" sizes="16x16">
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Baked Chicken Ricotta Meatballs with Spinach</h1>
+     <p><em>Serve with pasta, crusty bread, salad, or roasted veggies for a complete meal.</em></p>
+    </div>
+</div>
+
+<!-- First Row -->
+<div class="w3-row">
+    <div class="w3-col m2"><br></div>
+
+    <!-- Ingredients -->
+    <div class="w3-col m4 w3-theme-l4">
+     <h3>Ingredients:</h3>
+     <button onclick="clearAllCheckboxes();">Delete All</button>
+     <p>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 lb ground chicken</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup Ricotta cheese</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup fresh spinach, finely chopped</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">½ cup bread crumbs or panko</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">¼ cup grated Parmesan cheese</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 egg</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">2 cloves garlic, minced</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp dried oregano</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp salt</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">½ tsp black pepper</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Italian seasoning (to taste)</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">¼ cup fresh parsley, chopped</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 jar marinara sauce (about 24 oz)</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Olive oil for drizzling</div>
+     </p>
+    </div>
+
+    <!-- Directions -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Directions:</h3>
+        <button onclick="clearAllCheckboxes();">Delete All</button>
+        <p>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat oven to 400°F (200°C).</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large bowl, mix ground chicken, ricotta, spinach, breadcrumbs, parmesan, egg, garlic, oregano, salt, pepper, and parsley.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Form mixture into 1.5" meatballs and place on parchment-lined baking sheet.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Drizzle with olive oil and bake 20–25 minutes, until golden and cooked through.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Broil for an additional 2–3 minutes for browning.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Meanwhile, heat marinara sauce in a saucepan over medium heat.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Serve meatballs warm with marinara, garnished with extra parsley and parmesan if desired.</div>
+        </p>
+    </div>
+
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Image Row -->
+<div class="w3-row">
+    <div class="w3-col m2"><br></div>
+
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/chicken_ricotta_meatballs.jpg" alt="Baked Chicken Ricotta Meatballs" style="width:90%">
+    </div>
+
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/chicken_ricotta_meatballs2.jpg" alt="Chicken Meatballs with Marinara" style="width:90%">
+    </div>
+
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Notes Section -->
+<div class="w3-row w3-margin-top">
+    <div class="w3-col m2"><br></div>
+    <div class="w3-col m8 w3-theme-l3 w3-padding-large">
+        <h3>Notes:</h3>
+        <p>
+            These meatballs pair wonderfully with pasta, crusty bread, or a fresh salad. Last time, I served them with 
+            <a href="/kirk/sides/roasted_zucchini-squash.html">Oven Roasted Zucchini and Squash</a> for a light and flavorful side.
+        </p>
+    </div>
+    <div class="w3-col m2"><br></div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

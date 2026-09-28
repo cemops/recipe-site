@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zucchini Sticks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!-- End of Navigation bar -->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!-- End of Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Zucchini Sticks</h1>
+        </div>
+    </div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Zucchini</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup whole wheat bread crumbs</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup Parmesan cheese</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Dash of Veggie Magic</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 eggs</div><br>
+            </p>
+        </div>
+
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Preheat oven to 425°F.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Mix bread crumbs, Parmesan cheese, and Veggie Magic in a shallow dish.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Whisk eggs in another shallow dish.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Cut off zucchini ends and cut them in half lengthwise.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5. Cut the zucchini halves into 1-inch sticks.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6. Soak zucchini sticks in the egg wash, then coat them in the bread crumb mixture.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">7. Place the coated zucchini sticks onto a foil-lined, oiled sheet pan.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8. Bake for 20-25 minutes, turning halfway through the cooking time.</div><br>
+            </p>
+        </div>
+
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!-- End of Footer -->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>

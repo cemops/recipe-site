@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Black Bean and Corn Salad</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+
+<!-- Header -->
+        <!--Header-->
+        <div id="header-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+        </script>
+        <!--end of header-->
+
+
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Black Bean and Corn Salad</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">15-ounce can black beans*</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">15-ounce can corn (or 1 1/2 cups fresh corn cut from the cob, raw or boiled)</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 cup fresh pico de gallo**, aka fresh salsa (purchased, or 1/2 recipe Pico de Gallo)</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 teaspoon cumin</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 teaspoon kosher salt</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 teaspoon olive oil</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Zest or juice of 1/2 lime (optional)</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 large handful fresh cilantro, chopped or torn (optional)</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1. Drain and rinse the black beans. Drain the corn. In a bowl, mix them with the pico de gallo (do not drain), cumin, salt, and olive oil.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2. If desired, add torn cilantro or lime juice or zest. Serve immediately with a slotted spoon as a side salad, in a rice bowl, in tacos, or as a dip with tortilla chips. Store refrigerated for up to 4 days.</div>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <img src="/kirk/images/black_bean_corn-salad.jpg" alt="Black Bean and Corn Salad" style="width:50%">
+    </div>
+</div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

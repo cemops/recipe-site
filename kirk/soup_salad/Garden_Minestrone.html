@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Garden Minestrone</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#nav-placeholder").load("/css/nav_kirk.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+
+<!-- Header -->
+        <!--Header-->
+        <div id="header-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#header-placeholder").load("/css/header_kirk.html");
+        });
+        </script>
+        <!--end of header-->
+
+
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Garden Minestrone</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tsp EVOO</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup Onion, Chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tsp Fresh Oregano, Chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 Garlic Cloves, Minced</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3 Cups Yellow Squash, Chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3 Cups Zucchini, Chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup Carrot, Chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup Fresh Corn</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 Cups Tomato, Chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3 - 14 oz Cans Chicken broth</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 Cup Pasta</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 - 15 oz can Great Northern Beans, rinsed and drained</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 - 6 oz Package Spinach</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3/4 tsp Salt</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 tsp Freshly Ground Pepper</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup Grated Asiago Cheese</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Coarsely Ground Pepper</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Heat oil in a dutch oven over medium high heat. Add onion and saute 3 min or until softened. Add oregano and garlic, saute 1 min.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Stir in squash, zucchini, carrot and corn; saute 5 min or until veggies are tender. Remove from heat.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Place 3 Cups tomato and 1 can broth in blender; process until smooth. Add tomato mixture to pan; return pan to heat.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Stir in remaining 1 Cup tomato and remaining 2 cans broth; bring mixture to a boil. Reduce heat, and simmer 20 min.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Add pasta and beans to pan; cook 10 min or until pasta is tender, stirring occasionally. Remove from heat. Stir in Spinach, salt, and 1/2 teaspoon pepper. Ladle soup into individual bowls; top with cheese. Garnish with coarsely ground black pepper.</div>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <img src="/images/your_recipe_image.jpg" alt="Garden Minestrone" style="width:100%">
+    </div>
+</div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

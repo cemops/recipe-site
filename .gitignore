@@ -1,0 +1,17 @@
+# Scratch / template / backup files: keep on disk, keep OUT of the repo
+ai-template.html
+old_ai-template.html
+template.html
+template_new.html
+template_new-test.html
+Template-back.html
+Welcome_home_Da_Sung.html
+*.php-bak
+*-bak
+*_bak
+*.tar.gz
+
+# Editor / OS noise
+*~
+.DS_Store
+*.swp

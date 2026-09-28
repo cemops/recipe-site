@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Homemade Pizza Sauce</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Homemade Pizza Sauce</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 can (28 ounces) whole, peeled San Marzano tomatoes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon salt (or to taste, start with ½ teaspoon and then adjust as needed)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 teaspoon coarsely ground black pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">** 1 teaspoon dried basil (optional) (or 2 tablespoons minced fresh basil) - I didn't use the last time!!</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 - 1 teaspoon dried oregano (optional) (or 1 tablespoon minced fresh oregano)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 2 teaspoons granulated garlic powder (sandy, not the fine powder)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">(or 5 cloves of fresh garlic, minced or crushed)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon red wine vinegar, balsamic vinegar, or lemon juice, or a combination of both - I used balsamic last time!!</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Drain the tomatoes briefly to remove some of the water.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Mash the tomatoes gently to a finely chopped consistency and drain again much longer.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir all the ingredients together, adding the salt gradually, to taste.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In an authentic Napoletana marinara pizza, made with true San Marzano sauce, you would use only oregano, and not in the sauce but as a garnish after the bake. Do not cook this sauce–the tomatoes are already cooked when they go in the can and they will cook again on the pizza. This sauce will keep for 1 week in the refrigerator.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/homemade_pizza_sauce-1.jpg" alt="Homemade Pizza Sauce" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/homemade_pizza_sauce-2.jpg" alt="Homemade Pizza Sauce" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

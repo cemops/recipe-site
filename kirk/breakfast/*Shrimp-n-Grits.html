@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shrimp and Grits</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!--end of Navigation bar-->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!--end of Header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+        <h1>Shrimp and Grits</h1>
+        <p><em>A lighter take on a Southern classic dish.</em></p>
+    </div>
+</div>
+
+<!-- First Row -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+    
+    <!-- Ingredients Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Ingredients:</h3>
+        <!-- Clear All Button -->
+        <button onclick="clearAllCheckboxes();">Clear All</button>
+        <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup REAL Grits</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Seafood or Chicken Stock</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Whole Milk</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Smoked Paprika</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Shredded Parmesan</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS EVOO</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 LB Peeled and Deveined Shrimp (16-20)</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Approx 1 Cup Andouille Sausage (or Tasso Ham)</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Kosher Salt</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Garlic Cloves, Crushed</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Red Pepper, diced</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Scallions, cut into 2-inch pieces</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Dried Thyme</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Black Pepper</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 15-oz Can Fire Roasted Diced Tomatoes (I like to sub 5 roma tomatoes fire roasted on the grill then diced)</div>
+        </p>
+    </div>
+
+    <!-- Instructions Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Instructions:</h3>
+        <!-- Clear All Button -->
+        <button onclick="clearAllCheckboxes();">Clear All</button>
+        <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1. In a medium pot, combine the broth, milk, and paprika, and bring to a boil.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Gradually add the grits, stirring vigorously. Reduce heat to medium-low and cook covered, stirring periodically, for 6-8 minutes.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Add the Parmesan cheese in three parts, then remove from heat.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Toss the shrimp with seasoning and olive oil. Heat oil in a nonstick skillet over medium heat.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">5. Add sausage to the skillet and cook for 1 minute per side. Then add red pepper, garlic, and scallions, and sauté for 2-3 minutes.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">6. Add the diced tomatoes, Creole seasoning, and thyme. Simmer for 6 minutes until sauce thickens.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">7. Add shrimp to the sauce and cook until pink, about 3-4 minutes per side.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">8. Serve the shrimp mixture over the grits in bowls.</div>
+        </p>
+    </div>
+
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Image Row -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+    
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/shrimp_grits1.jpg" alt="Shrimp and Grits" style="width:90%">
+    </div>
+    
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/shrimp_grits2.jpg" alt="Shrimp and Grits" style="width:90%">
+    </div>
+
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

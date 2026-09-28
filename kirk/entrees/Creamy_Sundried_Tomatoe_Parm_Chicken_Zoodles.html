@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creamy Sundried Tomato + Parm Chicken Zoodles</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Creamy Sundried Tomato + Parm Chicken Zoodles</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 TBS Butter (w/ Olive Oil)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1/2 lb Boneless Skinless Chicken Thigh Filets - cut into strips</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">7 oz jarred Sun Dried Tomatoes in oil - chopped</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 Cloves Garlic - peeled and smashed</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1/4 Cup Heavy Cream (or Half and Half)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Cup Shaved Parmesan Cheese</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt to taste</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Dried Basil</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Red Chilli Flakes</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Zoodles or 2 Large Zucchini made into zoodles or sliced into "linguine"</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Heat the butter over medium-high heat. Add the chicken strips and sprinkle with salt. Pan fry until chicken is golden brown and cooked through.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Add the sun-dried tomatoes with 1 TBS of the oil from the jar, and the garlic. Saute until fragrant. (Add some red cooking wine at the end to deglaze the pan.)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Lower the heat, add the cream and Parmesan cheese, simmer while stirring until the cheese is melted. Sprinkle with salt, basil, and red chilli flakes.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Stir through the zoodles and continue to simmer until the zoodles have softened (about 5 - 8 minutes).</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/creamy_sundried_tomato_chicken.jpg" alt="Creamy Sundried Tomato Chicken" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/zoodles.jpg" alt="Zoodles" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

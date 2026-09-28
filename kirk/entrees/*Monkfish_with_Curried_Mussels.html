@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monkfish with Curried Mussels</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Monkfish with Curried Mussels</h1>
+            <p><em>Serves 2–4</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 large monkfish tail, filleted in two</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 lb mussels, cleaned and beard removed</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 sprigs thyme</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 bay leaves</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup dry white wine (or as needed)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 carrot, peeled and sliced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 small leek, sliced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 small celery stalk, sliced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 clove garlic, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp curry powder</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 pinches turmeric powder</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp curry powder + 1 tbsp salt (for dusting fish)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup heavy whipping cream</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Handful of cilantro, chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Butter</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Olive oil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> *Ask the fishmonger to remove gray membrane*</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Clean monkfish fillets and cut each in half. Dust with curry/salt mix and set aside 5 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Heat a wide pan until hot; add thyme, bay leaves, and mussels.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add wine, cover immediately, and cook ~30 seconds until mussels open.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Strain off & reserve juices; remove mussels from shells and set aside.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Sauté carrot, leek, celery, garlic with 1 tsp curry powder, turmeric, and thyme until soft.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Strain in mussel juices; reduce.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Pat monkfish dry and pan-fry in hot olive oil until golden (3–4 minutes).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add mussels to vegetables; warm through.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add cream and bring to a boil; mix in cilantro.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Divide mussel mixture into warm bowls; slice monkfish thickly and place on top.</div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/monkfish1.jpg" alt="Monkfish with Mussels" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/monkfish2.jpg" alt="Curried Mussels" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+<!-- end Footer -->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

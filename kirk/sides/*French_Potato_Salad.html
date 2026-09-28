@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>French-Inspired Potato Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>French Potato Salad</h1>
+    </div>
+</div>
+
+<!-- Ingredients and Instructions Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 pounds small red or Yukon gold potatoes (no larger than 2-inches in diameter)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon plus 1 teaspoon kosher salt, divided</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup loosely packed fresh tender herbs, such as parsley, basil, dill, tarragon, or a combination</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">4 medium scallions</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/3 cup olive oil</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup red wine vinegar</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon Dijon mustard</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon whole-grain Dijon mustard (or additional 1 tablespoon regular Dijon)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 teaspoon freshly ground black pepper</div><br>
+            </p>
+        </div>
+
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Place 2 pounds small red or Yukon gold potatoes and 1 tablespoon of the kosher salt in a large saucepan. Cover by 1 inch with cool water, then bring to a boil over high heat. Reduce the heat to medium and simmer until the potatoes are easily pierced with a knife, 15 to 20 minutes. Meanwhile, chop the herbs and scallions, and make the dressing.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Coarsely chop 1/2 cup loosely packed fresh tender herbs. Thinly slice 4 medium scallions.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Place 1/3 cup olive oil, 1/4 cup red wine vinegar, 1 tablespoon Dijon mustard, 1 tablespoon whole-grain Dijon mustard, 1/4 teaspoon black pepper, and the remaining 1 teaspoon kosher salt in a large bowl. Whisk well to combine and emulsify.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Drain the cooked potatoes in a colander and rinse under cold water just until they are cool enough to handle but still warm. Halve the potatoes (or quarter if large) and transfer to the bowl of vinaigrette. Gently toss to coat the potatoes. Add the herbs and scallions and toss lightly to combine. Set aside for 10 minutes to allow for the flavors to meld. Serve warm or at room temperature.</div><br>
+            </p>
+        </div>
+        
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/french_potato_salad.jpg" alt="French Potato Salad" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/french_potato_salad-2.jpg" alt="French Potato Salad" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

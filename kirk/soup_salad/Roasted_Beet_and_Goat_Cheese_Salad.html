@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roasted Beet and Goat Cheese Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Roasted Beet and Goat Cheese Salad</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 Medium Beets, scrubbed (I like to do 3 Red and 3 Yellow)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 Cups Arugula Salad</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Avocado, Sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Oz. Goat Cheese, Crumbled</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Chopped Toasted Walnuts</div>
+            </p>
+
+            <h3>Dressing</h3>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup EVOO</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup Balsamic Vinegar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 TBS Maple Syrup</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Dijon Mustard</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Kosher Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Freshly Ground Black Pepper</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat oven to 400 degrees. Wrap each beet in foil and place on baking sheet. Roast until tender, about 1 hour. Let rest then peel and cut into wedges.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Make Vinaigrette: In a jar, shake together olive oil, vinegar, maple syrup, and dijon until fully combined, season w/ salt and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place arugula in a large serving bowl and lightly dress with vinaigrette. Top w/ beets, avocado, goat cheese, and walnuts. Toss gently and add more vinaigrette as needed</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/roasted_beet_and_goat_cheese_salad-1.jpg" alt="Roasted Beet and Goat Cheese Salad" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/roasted_beet_and_goat_cheese_salad-2.jpg" alt="Roasted Beet and Goat Cheese Salad" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

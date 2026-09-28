@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minestrone Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Minestrone Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Olive Oil and Butter (the substitute was fine)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Small Onion, Diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Carrots, Chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Celery, Chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 - 6 Garlic Cloves, minced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5 oz Green Beans trimmed into 1" pieces</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Zucchini, quartered and thickly sliced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 14.5 oz cans Hunts Fire Roasted Tomatoes, diced with juices</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 15 oz can Tomato Sauce</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 15.5 oz can Kidney Beans, drained and rinsed</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tsp EACH Dried Basil, Dried Parsley</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp EACH Dried Oregano, salt, sugar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp EACH Black Pepper, Dried Thyme</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Red Pepper Flakes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Bay Leaf</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 Cups Low Sodium Chicken Broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cups Water</div>
+            </p>
+
+            <h3>Add Later</h3>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 Cups Small Pasta Shells (Used whole wheat bow ties)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 3 Cups Baby Spinach (EXCHANGE KALE)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Freshly Grated Parmesan</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Fresh Basil (Optional)</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Melt butter in olive oil in large Dutch oven / soup pot.  Add onions, carrots, and celery. Cook, stirring often, for 5 - 7 min or until the onions are translucent.  Add garlic and cook 30 seconds.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add all remaining ingredients through the water. Cover soup and bring to a boil. Uncover and reduce to a gentle simmer for 10 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Do NOT add pasta if will be freezing later. Cook separately and add as used.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove from heat and stir in spinach. Let wilt, about 1 min. Add water for a less Chunky soup.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Garnish with grated Parmesan.</div>
+            </p>
+
+            <h3>Recipe Notes</h3>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Correct Pasta: My favorite pasta to use for this Minestrone Soup recipe is small/mini pasta shells.  Small pasta shapes that are about the size of your chopped veggies ensure you get the right ratio of pasta to veggies in every slurpful. Other small pastas such as ditalini (the small short tubes) and mini penne will also work.  I don't recommend medium pastas.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Al Dente Pasta</b>: Cook the pasta just until al dente (meaning it has a little bite) to it because it will still cook a little once you remove it from the heat and nothing is worse than ruining a whole pot of Minestrone Soup than with soggy pasta.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Cook Pasta Separately:</b> As this Minestrone Soup Recipe is written, the pasta cooks in the pot with the veggies.  If you aren't prepared to babysit your pasta towards the end of cooking, then simply cook your pasta separately and add to individual bowls.  You will also want to cook your pasta separately if you plan on freezing your Minestrone Soup.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Customize Veggies:</b> This Minestrone Recipe is very forgiving when it comes to customizing the veggies with whatever you have on hand. You can swap the spinach for Swiss chard or baby kale, add potatoes (chopped ½" and add with green beans), add frozen peas, cabbage (both at end when you would add spinach), etc.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Zucchini:</b> The zucchini takes the least amount of time to cook, so take care you cut it on the thick side – at least ¼" chunks.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Green Beans:</b> I like fresh green beans but they are not my favorite vegetable – but guess what?!  They are my favorite vegetable in this Minestrone Soup Recipe – I highly recommend them!</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Add protein.</b> I love this Minestrone Soup as the base for whatever meat we have on hand or whatever we're craving.  It's fabulous to throw in some shredded rotisserie chicken, any type of ground meat (turkey, beef or Italian Sausage) or even mini meatballs!</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Pre Chopped Veggies:</b> This Minestrone Soup comes together very quickly – the only prep work you have to do is chop your veggies.  To save time and make this recipe almost "dump and simmer," you can purchase pre-chopped veggies.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Scale Down:</b> This recipe makes a lot of servings so I would recommend scaling down if you don't have a large family and don't want leftovers.  If you do love leftovers (raising my hand high), then you will love leftover Minestrone Soup for an easy lunch or dinner!</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Rice for Pasta:</b> I am a HUGE wild rice fan, so I will sometimes use wild rice instead of pasta in this Minestrone. If you choose to use rice, I recommend cooking it separately to ensure proper cooking of the rice and not overcooking of the veggies.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><b>Consistency:</b> The "chunkiness" of a soup is totally personal preference.  For a less chunky Minestrone Soup, simply add additional water at the end of cooking.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/minestrone_soup-1.jpg" alt="Minestrone Soup" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/minestrone_soup-2.jpg" alt="Minestrone Soup" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

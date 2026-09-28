@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Asian Rice Pilaf</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Asian Rice Pilaf</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Tbs Butter</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Sliced Carrots</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Sliced Celery</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Chopped Onion</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Uncooked Long Grain Rice (Last time Jasmatie Brown rice took too long)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cups Hot Water</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs Soy Sauce</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Sugar</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Dried parsley flakes</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Chicken Bouillon Granules</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Ground Ginger</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2-1/2 Cups Frozen Peas (about 10 oz) Thawed</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- In a large saucepan, heat butter over medium-high heat; saute carrot, celery and onion until tender, 3 - 5 min. Stir in rice until coated.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Stir in water, soy sauce, sugar and seasonings; bring to a boil. Reduce heat; simmer, covered, until liquid is absorbed and rice is tender, about 15 min.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Gently stir in peas. Cover and heat through.</div><br>
+             </p>
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/asian_rice_pilaf.jpg" alt="Asian Rice Pilaf" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/ingredients.jpg" alt="Asian Rice Pilaf" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

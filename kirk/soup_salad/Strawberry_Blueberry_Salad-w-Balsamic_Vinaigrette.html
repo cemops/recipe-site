@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Strawberry Blueberry Salad with Balsamic Vinaigrette</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Strawberry Blueberry Salad with Balsamic Vinaigrette</h1>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <h4>Salad</h4>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">8 cups Mixed salad greens</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup Strawberries, washed and chopped</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup Blueberries, washed</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">4 oz Feta cheese, Crumbled goat cheese or blue cheese</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">½ cup Walnuts or pecans, chopped and lightly toasted (optional)</div>
+
+            <h4>Balsamic Vinaigrette</h4>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">½ cup Olive oil</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">2¼ tablespoons Balsamic vinegar</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 clove Garlic, minced</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon Oregano</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon Salt</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">½ teaspoon Black pepper</div>
+        </div>
+
+        <!-- Instructions -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <h4>The Salad</h4>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Add mixed salad greens to a large bowl.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove leaves from strawberries and cut into thirds.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Add strawberries and blueberries to the bowl.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Add crumbled cheese over the top.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Lightly toast chopped walnuts or pecans in a skillet and add to the salad (if using).</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Toss salad with 2 to 3 tablespoons of balsamic vinaigrette.</div>
+
+            <h4>Balsamic Vinaigrette</h4>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine olive oil, balsamic vinegar, garlic, oregano, salt, and pepper in a mason jar.</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo">Seal and shake well until emulsified.</div>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Optional Image -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/strawberry_blueberry_salad.jpg" alt="Strawberry Blueberry Salad" style="width:90%">
+		</div>
+		<div class="w3-col m4 w3-center">
+        	<img src="/kirk/images/strawberry_blueberry_salad2.jpg" alt="Strawberry Blueberry Salad" style="width:90%">
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+</body>
+</html>

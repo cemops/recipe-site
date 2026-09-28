@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grilled Brussels Sprout Skewers</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!--end of Navigation bar-->
+
+<!--Header-->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+        <h1>Grilled Brussels Sprout Skewers</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+<div class="w3-row">
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+
+    <!-- Ingredients Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Ingredients:</h3>
+        <button onclick="clearAllCheckboxes();">Delete All</button>
+        <p>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 pound Brussels sprouts, uniform in size</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon extra virgin olive oil</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon minced garlic</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon soy sauce or tamari (for gluten free)</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon balsamic vinegar</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon Dijon mustard</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 teaspoon kosher salt</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 teaspoon ground black pepper</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Wood or metal skewers</div>
+        </p>
+    </div>
+
+    <!-- Instructions Column -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Directions:</h3>
+        <button onclick="clearAllCheckboxes();">Delete All</button>
+        <p>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Soak wooden skewers in water for at least 1 hour, if using.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Trim Brussels sprouts and remove outer leaves. Microwave 3 min or blanch and ice-bath. Dry well.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat grill to medium heat (~375°F) or use grill pan/broiler.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Toss sprouts with oil, garlic, soy sauce, balsamic, mustard, salt, and pepper.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Thread 4–5 Brussels sprouts per skewer, stem ends same direction, spacing 1/2-inch apart. Group similar sizes.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Grill skewers, covered, for 5 min. Flip and grill another 5 min, until browned and tender.</div>
+        <div class="list-todo-container"><input type="checkbox" class="list-todo">Remove from skewers, toss with reserved sauce, and serve warm.</div>
+        </p>
+    </div>
+
+    <!-- Blank Column -->
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Image Row -->
+<div class="w3-row">
+    <div class="w3-col m2"><br></div>
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/brussels_skewers1.jpg" alt="Grilled Brussels Sprout Skewers" style="width:90%">
+    </div>
+    <div class="w3-col m4 w3-center">
+        <img src="/kirk/images/brussels_skewers2.jpg" alt="Grilled Brussels Sprout Skewers" style="width:90%">
+    </div>
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- Nutrition Info -->
+<div class="w3-row w3-padding w3-theme-l3">
+    <h4>Nutrition (per serving – 1 of 3):</h4>
+    <p>Calories: 120 &nbsp; | &nbsp; Carbs: 16g &nbsp; | &nbsp; Protein: 6g &nbsp; | &nbsp; Fat: 5g</p>
+    <p>Saturated Fat: 1g &nbsp; | &nbsp; Fiber: 6g &nbsp; | &nbsp; Sugar: 4g</p>
+    <p>Potassium: 622mg &nbsp; | &nbsp; Vitamin A: 1142IU &nbsp; | &nbsp; Vitamin C: 129mg</p>
+    <p>Calcium: 73mg &nbsp; | &nbsp; Iron: 2mg</p>
+</div>
+
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end of Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+    checkboxes.forEach((checkbox) => {
+        checkbox.checked = false;
+    });
+}
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>
+Notes:
+Replace /kirk/images/brussels_skewers1.jpg and brussels_skewers2.jpg with your actual image file names.
+
+This includes nutrition info in a clean <div> below the image row.
+
+You can remove the “Notes” section or create a printable view with storage and freezing tips if desired.

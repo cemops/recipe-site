@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Healthy Salmon & Asparagus Bake</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Healthy Salmon & Asparagus Bake</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Salmon Filets</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Bunch of Asparagus</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Some thawed peas</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Minced Garlic</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Minced Parsley</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Seafood Magic</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Lemon Juice</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Lemon Slices</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Preheat oven to 400 degrees</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Then change to high broiler</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Rinse and pat dry salmon filets</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Place on a cooking sheet (lined with foil)</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Rub garlic then parsley on filets</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Season with Seafood Magic</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Sprinkle with lemon juice</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Spray with olive oil spray</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Season Asparagus with olive oil and veggie magic</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Spread asparagus and peas in a single layer around the salmon</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Place lemon slices over salmon and asparagus</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Place in oven for approx. 8 - 10 min</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">** Could also add red potatoes cut smaller **</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/salmon_asparagus.jpg" alt="Healthy Salmon & Asparagus Bake" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/lemon.jpg" alt="Lemon" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

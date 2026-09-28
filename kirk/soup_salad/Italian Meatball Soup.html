@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Italian Meatball Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Italian Meatball Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <strong>FOR THE MEATBALLS</strong>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 LB Ground Beef</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 - 1/2 Cup freshly grated Parmesan Cheese</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Egg</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Bread Crumbs (whole wheat)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 TBS Fresh Parsley</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Dried Oregano</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Salt</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/3 tsp Black Pepper</div>
+            </p>
+
+            <p>
+                <strong>FOR THE SOUP</strong>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Quarts Chicken Broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 TBS Tomato Paste</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Onion, diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Bay Leaves</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4-5 Sprigs Fresh Thyme</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 tsp Whole Black Peppercorns</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine all the ingredients (except the olive oil) for the meatballs and mix gently. Form into small, bite sized meatballs. Brown meatballs in stock pot on all sides for a few min. Remove meatballs and set aside.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add diced onion to the oil. Saute a few min. until softened and scrape up browned bits from meatballs. Add the rest of the soup ingredients and bring to a boil. Reduce heat, cover and simmer for 5 - 10 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add meatballs and simmer a few more minutes.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Garnish with fresh parsley, basil and Parmesan cheese.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/italian_meatball_soup-1.jpg" alt="Italian Meatball Soup" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/italian_meatball_soup-2.jpg" alt="Italian Meatball Soup" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

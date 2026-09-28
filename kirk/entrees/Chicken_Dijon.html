@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chicken Dijon</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Chicken Dijon</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 teaspoon coriander seeds</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons extra-virgin olive oil</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">8 medium chicken drumsticks (about 3 pounds)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt and freshly ground pepper</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 cup finely chopped onion</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 garlic cloves, minced</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 1/2 cups low-sodium chicken broth</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons whole-grain mustard (optional: 1 Tbs Dijon mustard)</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3 tablespoons crème fraîche or sour cream</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 teaspoons chopped tarragon or Marjoram</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+			 <div class="list-todo-container" ><input type="checkbox" class="list-todo">In a small bowl, whisk the mustard with the crème fraîche and tarragon.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- In a large skillet, toast the coriander seeds over moderately high heat until fragrant, about 2 minutes. Transfer the seeds to a mortar and let cool. Crush the seeds coarsely with a pestle.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- In the same skillet, heat the olive oil until shimmering. Season the chicken drumsticks with salt and pepper, add them to the skillet and cook over moderately high heat, turning, until golden brown all over, about 10 minutes.</div><br>
+			 <div class="list-todo-container" ><input type="checkbox" class="list-todo">Add the onion and cook, stirring occasionally, until softened, about 3 minutes. Add the garlic and cook for 1 minute. Add the broth and crushed coriander and bring to a boil. Cover and cook over moderately low heat until the chicken is cooked through, about 15 minutes.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Transfer the chicken to a platter, cover and keep warm.  Whisk the mustard mixture into the skillet and simmer the sauce over moderate heat until thickened, about 5 minutes. Return the chicken to the skillet (do not include any liquid from the platter, it makes the sauce too thin) and turn to coat.</div><br>
+             </p>
+
+             <h3>Make Ahead:</h3>
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- The stew can be refrigerated for up to 3 days.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chicken_dijon.jpg" alt="Chicken Dijon" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/chicken_dijon2.jpg" alt="Chicken Dijon" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+	
+// Navigation Bar
+ function myFunction() {
+  var x = document.getElementById("smallBar");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+// End of Navigation Bar	
+</script>
+
+</body>
+</html>

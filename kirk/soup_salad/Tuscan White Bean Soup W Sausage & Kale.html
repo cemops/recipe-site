@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tuscan White Bean Soup W/ Sausage & Kale</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Tuscan White Bean Soup W/ Sausage &amp; Kale</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 Cup EVVO</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 LB Italian Sausage - Cut Into Bite Size Pieces</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Onion - chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Carrot - chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Stalk Celery - chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Cloves Garlic - Minced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Lb Kale, Stems removed, Chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Cups Chicken Broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 - 28 oz Can Cannelloni Beans, Rinsed and drained</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Rosemary, dried</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Bay Leaf</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt to taste</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Shredded Parmesian</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large Dutch Oven or thick bottomed soup pot, cook sausage in 1/4 Cup Olive Oil on medium heat until browned on all sides.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add onion, carrot, celery and garlic. Continue to saute for another 3 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add Kale. Saute until Kale begins to wilt.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add Chicken broth, beans, rosemary and bay leaf.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Bring to a boil, then bring to a simmer, cover and cook on a low broil (simmer) for 30 min, stirring occasionally.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/tuscan_white_bean_soup_w_sausage_and_kale-1.jpg" alt="Tuscan White Bean Soup W/ Sausage & Kale" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/tuscan_white_bean_soup_w_sausage_and_kale-2.jpg" alt="Tuscan White Bean Soup W/ Sausage & Kale" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

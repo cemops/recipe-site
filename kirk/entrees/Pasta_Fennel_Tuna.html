@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pasta w/ Fennel & Tuna</title>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#nav-placeholder").load("/css/nav_kirk.html");
+        });
+        </script>
+        <!--end of Navigation bar-->
+
+<!-- Header -->
+        <!--Header-->
+        <div id="header-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#header-placeholder").load("/css/header_kirk.html");
+        });
+        </script>
+        <!--end of header-->
+
+
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Pasta w/ Fennel & Tuna</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 lb Orecchiette (or Large Shell Pasta)</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 medium onion, chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 cup pine nuts</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 medium fennel bulb, thinly sliced</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 bell pepper, cut into thin strips</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 cup raisins</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">3 cloves of garlic, minced</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 6oz can of tuna (packed in oil, preferred)</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 cup fresh parsley, chopped</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/2 cup grated Parmesan</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt and freshly ground pepper, to taste</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">In a large skillet, saute onion in olive oil until translucent. Add pine nuts and cook until they begin to lightly brown and are fragrant.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Add sliced fennel and stir or flip pan until fennel is on bottom and pine nuts on top. Add a bit of pasta water. Cover, and cook about 3 minutes.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Uncover and add bell peppers. Cook a few minutes and add the garlic. Continue cooking and add the tuna and raisins.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Cover, again, and cook until vegetables are tender – just a few more minutes.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Drain pasta and stir into fennel. Stir in parsley and cheese.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Check for seasoning and add salt and pepper, as desired.</div>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <img src="/images/your_recipe_image.jpg" alt="Pasta w/ Fennel & Tuna" style="width:100%">
+    </div>
+</div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

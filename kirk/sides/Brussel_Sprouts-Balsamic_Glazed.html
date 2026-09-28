@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Brussels Sprouts – Balsamic Glazed</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+<!--end of Navigation bar-->
+
+<!--Header-->
+    <div id="header-placeholder">
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+<!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Brussels Sprouts – Balsamic Glazed</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 ounces bacon, diced</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1-2 tablespoons extra virgin olive oil</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">10 ounces Brussels sprouts, halved</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1/4 cup balsamic vinegar</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Fresh ground black pepper</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 tablespoons butter</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Salt</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Cook bacon in olive oil over medium-low heat until crispy. Set aside.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Brown Brussels sprouts cut-side down in pan.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Simmer sprouts in water until tender, then remove.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Reduce balsamic vinegar until syrupy, stir in butter.</div>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Toss sprouts and bacon with balsamic mixture, season, and serve.</div>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/brussels_sprouts_bacon.jpg" alt="Brussels Sprouts with Bacon" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/balsamic_sprouts.jpg" alt="Balsamic Glazed Brussels Sprouts" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+<!--Footer-->
+    <div id="footer-placeholder">
+    </div>
+    
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+<!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

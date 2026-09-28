@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Feta Skharas</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Feta Skharas</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Feta Cheese: 12 oz</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tomato - Chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Sweet Pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Greek Oregano (Greek Seasoning)</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place feta slices on a piece of foil large enough to wrap around the slices without overcrowding them.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Top the cheese with the chopped tomatoes, pepper slices, Greek seasoning, and a couple of drops of olive oil. Wrap the feta slices securely in the foil.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat the grill or oven to 375 degrees and cook for 15 - 17 min. Each slice should be soft in the center when you press your finger in it.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Transfer to a bowl or plate and serve.</div>
+            </p>
+
+            <h3>Notes</h3>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">For best results, bring the feta to room temp before grilling / baking</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">The pepper can be mild or hot, depending on your taste</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Thyme is an acceptable substitute for oregano</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Can also be roasted in the oven at 375 degrees for 15 - 20 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">As an additional touch, serve feta with grilled or toasted bread</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/feta_skharas-1.jpg" alt="Feta Skharas" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/feta_skharas-2.jpg" alt="Feta Skharas" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

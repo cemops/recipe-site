@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cajun Omelette</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Cajun Omlette</h1>
+        </div>
+    </div>
+
+    <!-- First Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8 eggs</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">½ lb spicy sausage, casing removed</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">⅓ cup sliced mushrooms</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">½ onion, diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">½ medium bell pepper, diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">¼ cup green onions, chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 jalapeno pepper, seeded and chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tablespoons water</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon Dijon or homemade mustard</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cooking fat</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 pinch cayenne pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sea salt and freshly ground black pepper to taste</div>
+            </p>
+        </div>
+
+        <!-- Instructions -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Fry sausage meat in a large frying pan with some cooking fat. Set aside and reserve.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add cooking fat to the pan and fry mushrooms, onion, bell pepper, and jalapeno until mushrooms are browned.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Whisk eggs with water, mustard, cayenne, salt, and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Pour egg mixture over the vegetables in the pan.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the cooked sausage back into the pan.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Gently stir until eggs are nearly set.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Fold omelet in half and cover; cook for 1 more minute.</div>
+            </p>
+			<p>LAST TIME I MADE THE STUFFING AND PLACED THEM IN THE "SKINNY OMELETTE' RECIPE <br>
+                <a href="../entrees/Skinny_Omelette_Options.html" target="_blank" style="color: blue">Skinny Omelette Options Link</a>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Fry sausage meat in a large frying pan with some cooking fat. Set aside and reserve.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add cooking fat to the pan and fry mushrooms, onion, bell pepper, and jalapeno until mushrooms are browned. Add dmustard, cayenne, salt, and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Whisk eggs</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Pour egg mixture in the pan and swirl per skinny omlette directions.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the cooked sausage mixture back into the omlette.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Follow Skinney Omelette instructions to fold and present omlette.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row (optional) -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m8 w3-center">
+            <img src="/kirk/images/cajun_omelet.jpg" alt="Cajun Omelet" style="width:90%">
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Notes -->
+    <div class="w3-row w3-padding">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m8 w3-theme-l3">
+            <h4>Notes:</h4>
+            <p>This Cajun omelette pairs beautifully with Leek & Sweet Potato Soup or a light summer salad. Adjust the spice to your liking by adding extra cayenne or hot sauce if desired.</p>
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cajun Shrimp & Andouille Sweet Potato Rounds</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Cajun Shrimp & Andouille Sweet Potato Rounds</h1>
+            <p><em>Appetizer / Party Version – ~20–24 bites</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3–4 medium sweet potatoes</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 lb raw shrimp, peeled, deveined, chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 6 oz andouille sausage, diced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2–3 cloves garlic, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp olive oil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp butter</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1–2 tsp Cajun seasoning</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> ¼–½ tsp cayenne pepper</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3 tbsp whipped cream cheese</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2–3 tbsp whole milk Greek yogurt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Kosher salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Olive oil (for roasting rounds)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Optional garnish: green onions, lemon juice, smoked paprika</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat oven to 425°F. Slice sweet potatoes ½-inch thick, pat dry, toss with olive oil & salt. Roast 20–25 min, flipping halfway. Optional broil 1–2 min for caramelization.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Heat olive oil & butter in skillet. Add garlic 30 sec. Add sausage 2–3 min. Add shrimp & Cajun seasoning, cook until opaque (1–2 min). Remove from heat.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Stir in cream cheese, Greek yogurt, cayenne. Optional: mash 1–2 tbsp roasted sweet potato to thicken.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Allow mixture to cool slightly, then spoon 1 tbsp onto each sweet potato round and lightly press to adhere.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Return to oven 400–425°F for 5–7 min to heat through and lightly set. Garnish if desired and serve warm.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+                <div class="w3-col m8 w3-center">
+                    <img src="/kirk/images/sweetpotatorounds1.jpg" alt="Sweet Potato Rounds" style="width:90%">
+                </div>
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

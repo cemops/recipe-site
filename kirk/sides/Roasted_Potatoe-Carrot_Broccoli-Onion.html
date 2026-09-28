@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roasted Potato Carrot, and Broccoli Onions</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Roasted Potato Carrot, and Broccoli Onions</h1>
+            <p><em>Two-pan method for perfectly caramelized vegetables</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Potatoes, cut into ¾–1 inch chunks or wedges</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Carrots, halved lengthwise if thick, cut into 2–3 inch pieces</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Onion, cut into large wedges</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Broccoli florets, stems peeled and sliced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Green onions, left whole or halved (added last)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Olive oil (about 1–1½ tbsp per pan)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Black pepper</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Optional: garlic powder, paprika, rosemary, thyme</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions (Two-Pan Method)</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat oven to 425°F (220°C).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Use two large sheet pans to prevent overcrowding.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cut vegetables to similar thickness for even cooking.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Toss each vegetable group separately with olive oil, salt, pepper, and optional seasonings.</div>
+
+                    <hr>
+
+                    <strong>Pan 1 – Hard Vegetables</strong>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add potatoes and carrots to Pan 1 in a single layer, cut side down when possible.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Roast for 20 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Flip and continue roasting for 10–15 more minutes until tender and browned.</div>
+
+                    <hr>
+
+                    <strong>Pan 2 – Medium Vegetables</strong>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add onions and broccoli to Pan 2.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Roast for 12–15 minutes, stirring once halfway.</div>
+
+                    <hr>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add green onions during the final 5 minutes if using.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Remove pans when vegetables are caramelized and tender.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Combine pans if desired, adjust seasoning, and serve.</div>
+                </div>
+            </div>
+
+            <!-- Notes -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l5 w3-padding">
+                    <h4>Why Two Pans Works</h4>
+                    <ul>
+                        <li>Prevents steaming and promotes browning</li>
+                        <li>Allows each vegetable group to cook perfectly</li>
+                        <li>Easier stirring and flipping</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/roasted_veggies1.jpg" alt="Roasted Vegetables Pan 1" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/roasted_veggies2.jpg" alt="Roasted Vegetables Pan 2" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+<!-- End Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

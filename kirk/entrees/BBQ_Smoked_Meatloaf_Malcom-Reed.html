@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BBQ Smoked Meatloaf - Malcom Reed</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>BBQ Smoked Meatloaf - Malcom Reed</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 lb ground beef</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 lb ground pork</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Celery Rib</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Red Pepper</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 Cloves Garlic</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">4 Green Onion, whites and light green only</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">8 oz Bread Crumbs</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">2 Eggs w/ 1/4 Cup Half and Half</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Black Pepper</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">Kosher Salt</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">BBQ Rub</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">1 Tbs Worcestershire</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Combine ingredients in a large bowl.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Line 2 foil loaf pans with Saran Wrap and fill each with meat mixture. Let set for at least 30 min.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Remove to smoker grate, remove plastic wrap and smoke for 2 - 3 hours at 275 degrees until internal temp reaches 155 degrees.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Baste with sweet BBQ Sauce and let cook for an additional 15 min and internal temp reaches 160 degrees.</div><br>
+             <div class="list-todo-container" ><input type="checkbox" class="list-todo">- Remove and let rest for 15 min.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/bbq_smoked_meatloaf.jpg" alt="BBQ Smoked Meatloaf" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/bbq_smoked_meatloaf2.jpg" alt="BBQ Smoked Meatloaf" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+        <script>
+        $(function(){
+                $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+        </script>
+        <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

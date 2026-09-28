@@ -1,0 +1,9 @@
+
+@import url('kirk/images/kr.ico');
+
+
+.title-icon {
+            background: url('kirk/images/kr.jpg') no-repeat left center;
+            padding-left: 20px; /* Adjust based on icon size */
+        }
+ 				

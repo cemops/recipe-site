@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smoked Salmon Eggs Benedict</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Smoked Salmon Eggs Benedict</h1>
+     <p><em>A delightful twist on the classic Eggs Benedict with smoked salmon and avocado.</em></p>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <button onclick="clearAllCheckboxes();">Delete All</button>
+         <p>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 English Muffins, Split</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 Large Avocado, Sliced</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 TBS Fresh Dill</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp Capers</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> Heirloom Tomatoes, for Serving</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 Large Eggs</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 TBS White Vinegar</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3 oz Smoked Salmon</div>
+            <h4>For Hollandaise Sauce:</h4>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 Egg Yolks</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 TBS Fresh Lemon Juice</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> Salt and Black Pepper</div>
+            <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 Cup Butter, Melted</div>
+         </p>
+        </div>
+
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- Prepare ingredients: thaw smoked salmon, slice avocado, chop fresh dill.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- Prepare the Hollandaise Sauce: whisk egg yolks, lemon juice, salt, and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- Slowly whisk in melted butter over simmering water until sauce thickens.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- Toast the English Muffins.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- Poach the eggs with a dash of vinegar in simmering water.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- Assemble: layer muffin with avocado, smoked salmon, and poached egg.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- Smother with Hollandaise Sauce, garnish with dill and capers.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">- If sauce is too thick, thin with hot water and whisk.</div>
+            </p>
+        </div>
+
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/salmon_benedict1.jpg" alt="Smoked Salmon Eggs Benedict" style="width:90%">
+        </div>
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/salmon_benedict2.jpg" alt="Smoked Salmon Eggs Benedict" style="width:90%">
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+    <!--Footer-->
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>

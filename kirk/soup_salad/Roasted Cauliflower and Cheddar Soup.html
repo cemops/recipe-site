@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roasted Cauliflower and Cheddar Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Roasted Cauliflower and Cheddar Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 large head of cauliflower chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tbsp olive oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Sea salt and pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp garlic powder</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 onion chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 tbsp minced garlic</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5 cups chicken broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 - 2 1/2 cups double cheddar cheese</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Lightly toss the cauliflower in 1 Tbs olive oil, salt, pepper and garlic powder. line a baking sheet with foil and roast the florets at 425 degrees until the florets begin to brown. about 30 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Over medium, heat up your olive oil and saute your onion until soft in a stock pot.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add cauliflower and stir around for a min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add Chicken Broth. Bring to a boil and then reduce the heat down to a simmer and cover. Let simmer for 30 - 35 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Use and Immersion blender and puree.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add the cheddar and stir to melt and serve.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Garnish soup with pepper and Olive Oil</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/roasted_cauliflower_and_cheddar_soup-1.jpg" alt="Roasted Cauliflower and Cheddar Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- Image - add later -->
+            <!-- <img src="/kirk/images/roasted_cauliflower_and_cheddar_soup-2.jpg" alt="Roasted Cauliflower and Cheddar Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

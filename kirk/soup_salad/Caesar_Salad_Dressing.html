@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caesar Salad Dressing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!-- End of Navigation bar -->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!-- End of Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Caesar Salad Dressing</h1>
+        </div>
+    </div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Small Garlic Cloves, Minced</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Anchovy Paste</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbsp Freshly Squeezed Lemon Juice (1 Lemon)</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Dijon Mustard</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tsp Worcestershire Sauce</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup Mayonnaise</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 Cup Freshly Grated Parmigiano-Reggiano Cheese</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Salt</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 tsp Ground Black Pepper</div><br>
+            </p>
+        </div>
+
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1. In a medium bowl, whisk together the garlic, anchovy paste, lemon juice, Dijon mustard, and Worcestershire sauce.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Add the mayonnaise, Parmigiano-Reggiano, salt, and pepper, and whisk until well combined.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Taste and adjust seasoning to your liking.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4. The dressing will keep well in the fridge for about a week.</div><br>
+            </p>
+        </div>
+
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    </div>
+
+<!-- Nutrition Information -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d3">
+            <h2>Nutrition Information</h2>
+        </div>
+        <div class="w3-container w3-center w3-theme-l4">
+            <p><strong>Serving Size:</strong> About 2 Tablespoons</p>
+            <p><strong>Calories:</strong> 184</p>
+            <p><strong>Fat:</strong> 19g</p>
+            <p><strong>Saturated Fat:</strong> 1g</p>
+            <p><strong>Carbohydrates:</strong> 1g</p>
+            <p><strong>Sugar:</strong> 0g</p>
+            <p><strong>Fiber:</strong> 0g</p>
+            <p><strong>Protein:</strong> 2g</p>
+            <p><strong>Sodium:</strong> 296mg</p>
+            <p><strong>Cholesterol:</strong> 13mg</p>
+        </div>
+    </div>
+
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!-- End of Footer -->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>

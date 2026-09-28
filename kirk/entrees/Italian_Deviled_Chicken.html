@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Italian Deviled Chicken</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+        
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+<!-- Header -->
+    <!--Header-->
+    <div id="header-placeholder">
+    
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+    <!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Italian Deviled Chicken</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">4 Skinless, boneless chicken breasts cut into 1-inch cubes</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup olive oil</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Juice and finely grated rind of 1 lemon</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 garlic cloves, finely chopped</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp finely chopped dried red chiles</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt & pepper</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Fresh flat-leaf parsley sprigs to garnish</div><br>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button oncl ick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Place the chicken in a large, shallow, nonmetallic dish (or gallon zip lock bag).</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Place the oil, lemon juice and rind, garlic and chiles in a measuring cup and stir until well blended. Season to taste with salt and pepper.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Pour the mixture over the chicken and stir gently to coat.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Cover with plastic wrap and let marinate in the fridge for up to 8 hours.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Preheat the grill. Drain the chicken, reserving the marinade.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Thread the chicken onto 8 metal or presoaked wooden skewers and cook over medium-high heat, turning and brushing frequently with the reserved marinade, for 6 - 10 min.</div><br>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">- Transfer to a large serving dish, garnish with parsley sprigs, serve immediately.</div><br>
+             </p>
+            
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+<!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/italian_deviled_chicken.jpg" alt="Italian Deviled Chicken" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/parsley.jpg" alt="Parsley" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+    
+</div>
+
+    <!--Footer-->
+        <div id="footer-placeholder">
+        
+        </div>
+        
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+    <!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+    
+// Navigation Bar
+function myFunction() {
+var x = document.getElementById("smallBar");
+if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+} else {
+    x.className = x.className.replace(" w3-show", "");
+}
+}
+// End of Navigation Bar    
+</script>
+
+</body>
+</html>

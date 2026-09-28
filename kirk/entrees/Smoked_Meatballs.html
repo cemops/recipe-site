@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smoked Meatballs</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Smoked Meatballs</h1>
+            <p><em>Serves 6–8</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 lb ground beef (or 1 lb beef + 1 lb ground pork)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 large eggs, whisked</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 medium red onion, diced small</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 carrot, diced small</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 red bell pepper, diced small</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp garlic, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1.5 tsp Italian seasoning, dried</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> ½ tsp black pepper</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 24 oz pasta sauce (your choice)</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat smoker to 225°F.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a large mixing bowl, combine ground meat, eggs, onion, carrot, red pepper, garlic, Italian seasoning, salt, and pepper. Mix thoroughly.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Form meatballs (~3” each) using a ¼ cup scoop or large spoon. Place on a rimmed sheet pan or cast iron skillet, leaving space between each.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Smoke meatballs immediately or cover and refrigerate for up to 1 day before smoking.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Place meatballs in the smoker on a rack. Smoke at 225°F for 1 hour.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat smoker to 325°F. Pour half of the pasta sauce into a large baking dish, place meatballs on top, then pour remaining sauce over them.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Continue smoking meatballs in pasta sauce for about 45 minutes, until internal temp reaches 160°F.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Serve when cool enough to enjoy. Perfect for sandwiches or pasta dishes.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/smokedmeatballs1.jpg" alt="Smoked Meatballs" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/smokedmeatballs2.jpg" alt="Smoked Meatballs in Sauce" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

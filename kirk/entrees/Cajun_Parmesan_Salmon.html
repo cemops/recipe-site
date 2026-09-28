@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cajun Parmesan Salmon</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+    <!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+    <!--end of Navigation bar-->
+
+    <!--Header-->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function () {
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+    <!--end of Header-->
+
+    <!-- Recipe Container -->
+    <div class="w3-container w3-card-4 w3-margin">
+        <!-- Recipe Name -->
+        <div class="w3-row">
+            <div class="w3-center w3-theme-d1">
+                <h1>Cajun Parmesan Salmon</h1>
+            </div>
+        </div>
+
+        <!-- First Row -->
+        <div class="w3-row">
+            <!-- Blank Column -->
+            <div class="w3-col m2"><br></div>
+
+            <!-- Ingredients Column -->
+            <div class="w3-col m4 w3-theme-l4">
+                <h3>Ingredients:</h3>
+
+                <p>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">4 - 4 oz Salmon Fillets</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbs Extra Virgin Olive Oil (EVOO)</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">2 tsp Cajun Seasoning</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">Fresh Ground Black Pepper</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs Butter</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">3 Cloves Garlic, minced</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">1/3 Cup low-sodium Chicken Broth</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">Juice of 1 Lemon</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbs Honey</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbs freshly chopped Parsley</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Tbs freshly chopped Parmesan Cheese</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">Lemon Slices, for serving</div><br>
+                </p>
+            </div>
+
+            <!-- Instructions Column -->
+            <div class="w3-col m4 w3-theme-l4">
+                <h3>Instructions:</h3>
+                <p>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">- Heat oil in a large skillet over medium-high heat.</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">- Season salmon with 1 tsp Cajun Seasoning and pepper, then add to skillet, skin-side up. Cook until golden, about 6 minutes, then flip and cook for another 2 minutes. Transfer to a plate.</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">- Add butter and garlic to the skillet. When the butter has melted, stir in broth, lemon juice, honey, and the remaining 1 tsp Cajun Seasoning, parsley, and Parmesan.</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">- Bring the mixture to a simmer, reduce heat to medium, and add salmon back to the skillet. Simmer for 3-4 minutes until sauce reduces and salmon is cooked through.</div><br>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo">- Add lemon slices to skillet and serve.</div><br>
+                </p>
+            </div>
+
+            <!-- Blank Column -->
+            <div class="w3-col m2"><br></div>
+        </div>
+
+        <!-- Image Row -->
+        <div class="w3-row">
+            <div class="w3-col m2"><br></div>
+            <div class="w3-col m4 w3-center">
+                <img src="/kirk/images/cajun-parmesan-salmon-1.jpg" alt="Cajun Parmesan Salmon" style="width:90%">
+            </div>
+            <div class="w3-col m4 w3-center">
+                <img src="/kirk/images/cajun-parmesan-salmon-2.jpg" alt="Cajun Parmesan Salmon" style="width:90%">
+            </div>
+            <div class="w3-col m2"><br></div>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div id="footer-placeholder"></div>
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+        });
+    </script>
+    <!--end of Footer-->
+
+    <script>
+        function clearAllCheckboxes() {
+            const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+            checkboxes.forEach((checkbox) => {
+                checkbox.checked = false;
+            });
+        }
+
+        // Navigation Bar
+        function myFunction() {
+            var x = document.getElementById("navDemo");
+            if (x.className.indexOf("w3-show") == -1) {
+                x.className += " w3-show";
+            } else {
+                x.className = x.className.replace(" w3-show", "");
+            }
+        }
+    </script>
+
+</body>
+
+</html>

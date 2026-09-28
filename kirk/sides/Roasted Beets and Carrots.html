@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Roasted Beets and Carrots</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Roasted Beets and Carrots</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 pounds golden beets with tops</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 pounds red beets with tops</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 tablespoons extra-virgin olive oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 large garlic cloves, halved</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt and freshly ground pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8 ounces fresh baby carrots</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 tablespoon sherry vinegar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 large shallot, minced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 ounce soft goat cheese, crumbled</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Preheat the oven to 425°. Peel the beets and cut them into 1-inch wedges. Discard the tough stems from the beet tops and coarsely chop the leaves.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a bowl, toss the golden beets with 1 teaspoon of the olive oil and 2 garlic clove halves and season with salt and pepper. Arrange in one-third of a large ovenproof skillet. Repeat with the red beets and then the carrots, using 1 teaspoon of olive oil and 2 garlic halves for each vegetable. Set the skillet over high heat and cook without stirring until sizzling. Cover the skillet and roast in the oven for about 35 minutes, until tender. Transfer the vegetables to a platter.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a small bowl, whisk the vinegar with 1 tablespoon of the olive oil and half of the shallot. Season with salt and pepper and whisk in the goat cheese.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In the skillet, heat the remaining 1 tablespoon of oil. Add the remaining shallot and cook over moderately high heat until softened, about 1 minute. Add the chopped beet greens and cook until just wilted, about 5 minutes. Season with salt and pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add half of the goat cheese dressing to the beet greens and toss. Add the roasted vegetables and toss once or twice. Transfer the salad to a platter and drizzle with the remaining dressing. Serve right away.</div>
+            </p>
+
+            <h3>Make Ahead</h3>
+            <p>The roasted vegetables can be refrigerated for up to 3 days. Rewarm before assembling the salad.</p>
+
+            <h3>Notes</h3>
+            <p>One Serving 200 cal, 9 gm fat, 1.8 gm sat fat, 28 gm carb, 9 gm fiber, 5 gm protein.</p>
+
+            <h3>Suggested Pairing</h3>
+            <p>Rich Italian white.</p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/roasted_beets_and_carrots-1.jpg" alt="Roasted Beets and Carrots" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/roasted_beets_and_carrots-2.jpg" alt="Roasted Beets and Carrots" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

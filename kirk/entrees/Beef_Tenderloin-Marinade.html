@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Beef Tenderloin & Marinade</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Beef Tenderloin & Marinade</h1>
+            <p><em>Serves 4–6</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 Beef Tenderloin</div>
+
+                    <h4>Marinade</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 cloves garlic, slivered</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup olive oil</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/4 tsp Tabasco</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup port wine</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 cup soy sauce</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Salt and pepper, to taste</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Bouquet garni: 2 bay leaves, thyme</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Thaw and trim the tenderloin.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Marinade overnight.</div>
+
+                    <h4>Option 1: Smoke and Reverse Sear</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat smoker to 250°F.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add water/apple juice and fruit wood chips to smoker.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Smoke at 250°F for ~1 hour until internal temp reaches 120°F.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat grill to high heat.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Sear tenderloin on grill 3 minutes each side (~12 minutes total).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Remove and let rest for 15 minutes.</div>
+
+                    <h4>Option 2: Grill</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Grill over direct high heat for 20 minutes, turning every 5 minutes.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Move to indirect heat for 20–25 minutes, turning occasionally until cooked to 130°F.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Remove and let rest for 15 minutes.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row (Optional) -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/beeftenderloin1.jpg" alt="Beef Tenderloin Marinade" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/beeftenderloin2.jpg" alt="Beef Tenderloin Sliced" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

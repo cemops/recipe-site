@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Halibut with Sugar Snap Pea Salad</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Halibut with Sugar Snap Pea Salad</h1>
+            <p><em>Serves 2</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp fresh lime juice</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp grated fresh ginger</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp olive oil, divided</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Kosher salt & freshly ground black pepper</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 12 oz sugar snap peas (about 4 cups), strings removed</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 small red onion, thinly sliced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp sesame seeds, toasted (optional)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 lb halibut fillet, cut into 4–6 oz pieces</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 lime, cut into wedges (for serving)</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a large bowl, whisk together lime juice, ginger, 1 tbsp olive oil, and ¼ tsp each salt and pepper.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add sugar snap peas, red onion, and sesame seeds (if using); toss to coat. Set aside.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Heat remaining 1 tbsp olive oil in a large nonstick skillet over medium-high heat.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Season halibut with ½ tsp salt and ¼ tsp pepper.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cook halibut until opaque and flakes easily, about 3–5 minutes per side.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Serve halibut alongside snap pea salad with lime wedges.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row (Optional) -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/halibut_snapsalad_1.jpg" alt="Halibut with Sugar Snap Pea Salad" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/halibut_snapsalad_2.jpg" alt="Pan-Seared Halibut" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pasta Alla Vodka</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Pasta Alla Vodka</h1>
+            <p><em>Serves 4–6</em></p>
+            <p><strong>Works best with large pasta: rigatoni or penne</strong></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 3 tbsp butter</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 shallot, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cloves garlic, minced</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup tomato paste</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 tsp crushed red pepper flakes</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp vodka</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Kosher salt, to taste</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 lb tubed pasta (penne or rigatoni)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup heavy cream</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup freshly grated Parmesan, plus more for serving</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Basil, for serving</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> In a large skillet over medium heat, melt butter. Add shallot and garlic and cook, stirring frequently, until softened (~4–5 minutes).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add tomato paste and red pepper flakes and cook, stirring frequently, until paste coats shallots and garlic and begins to darken (~5 minutes).</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add vodka to skillet, stir to incorporate, scraping any browned bits from the bottom. Turn off heat.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Bring a large pot of salted water to a boil and cook pasta until al dente. Reserve 2 cups of pasta water before draining.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Return sauce to medium heat and add 1/4 cup pasta water and heavy cream, stirring to combine. Add half the Parmesan and stir until melted.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Turn off heat and stir in cooked pasta. Fold in remaining Parmesan, adding more pasta water (1 tbsp at a time) if sauce is too dry. Season with salt if needed.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Serve topped with more Parmesan and torn basil leaves.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row (Optional) -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/pastaallavodka1.jpg" alt="Pasta Alla Vodka" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/pastaallavodka2.jpg" alt="Pasta Alla Vodka with Basil" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

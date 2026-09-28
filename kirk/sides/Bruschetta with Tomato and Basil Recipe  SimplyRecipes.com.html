@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bruschetta with Tomato and Basil</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Bruschetta with Tomato and Basil</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Prep time: 15 minutes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cook time: 20 minutes</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Yield: Makes 24 small slices. Serves 6-10 as an appetizer.</div>
+            </p>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 or 7 ripe plum tomatoes (about 1 1/2 lbs)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 cloves garlic, minced (about 2 teaspoons)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbsp extra virgin olive oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon balsamic vinegar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6-8 fresh basil leaves, thinly sliced* or chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 teaspoon kosher salt, more or less to taste</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 teaspoon freshly ground black pepper, more or less to taste</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 baguette French bread or similar Italian bread</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup (60 ml) olive oil</div>
+            </p>
+
+            <p><em>*To thinly slice basil leaves, stack the leaves on top of each other and roll up like a cigar. Then make thin slices from one end of the basil cigar to the other.</em></p>
+
+            <p>We suggest using plum tomatoes for bruschetta because they have thicker flesh with fewer seeds and less juice than regular tomatoes, but feel free to use any tomato for this recipe. If you use cherry tomatoes, just quarter them, don't bother blanching or peeling them.</p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Bring 2 quarts of water to a boil. As the water is heating make shallow cuts in a cross pattern at the tip ends of the tomatoes (this will make the tomatoes easier to peel). Once the water is boiling, remove the pot from the heat. Put the tomatoes in the hot water and blanch for 1 minute. Remove with a slotted spoon and let sit until cool enough to handle. Then gently peel off the tomato skins. Cut out the stem base with a paring knife. Cut the tomatoes into halves or quarters and squeeze out most of the juices and seeds.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Preheat the oven to 450°F (230°C) with a rack in the top slot of the oven. Finely chop the tomatoes and place them in a medium bowl. Mix in the minced garlic, 1 Tbsp extra virgin olive oil, and the balsamic vinegar. Stir in the thinly sliced basil and add salt and freshly ground black pepper, adding more to taste. Note, tomatoes love salt; you may need to add more than you expect.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Use a bread knife to slice the baguette on the diagonal making half-inch thick slices. Brush one side of each slice with olive oil (a pastry brush helps here) and place olive oil-side down on a baking sheet or roasting pan. The baguette slices will toast best in the top rack of your oven, so you may need to work in batches to toast them all. When the oven has reached 450°F (230°C) place the slices in the oven on the top rack and toast for 5 to 6 minutes until lightly browned around the edges.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">If you want you can toast the bread slices without coating them first in olive oil. Toast them until lightly browned on both sides. Then cut a clove of garlic in half and rub over one side of the toast. Then brush with olive oil.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Arrange the toasted bread on a platter, olive oil side facing up (the olive oil will help create a temporary barrier keeping the bread from getting soggy from the chopped tomatoes). Either serve the toasts plain with a bowl of the tomato bruschetta mixture on the side for people to top their own, or use a spoon to gently top each toasted bread slice with some of the tomato mixture. If you top each slice individually, do it right before serving.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/bruschetta_with_tomato_and_basil-1.jpg" alt="Bruschetta with Tomato and Basil" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/bruschetta_with_tomato_and_basil-2.jpg" alt="Bruschetta with Tomato and Basil" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wedding Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Wedding Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 Quarts Chicken low sodium broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 large carrots, finely diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2 celery ribs, finely diced</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Kosher salt, ground pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup orzo</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 lb ground pork</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup freshly grated parmigiano-Reggiano</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cu dry bread crumbs</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5 oz baby spinach, chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">one 16- oz can chickpeas, drained and rinsed</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a large pot bring the chicken stock to a boil with carrot and celery. &nbsp;Season with salt and pepper. Add the orzo and cook until al dente, about 7 min.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Meanwhile, in a bowl, knead the pork with the 1/4 cup of cheese, the bread crumbs and 1/2 teaspoon each of salt and pepper. Form the mixture into 1-inch balls.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Drop the balls into the boiling soup and simmer for 5 min. Sir int he spinach and chickpeas and simmer until the meatballs are cooked through, 5 min longer.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/wedding_soup-1.jpg" alt="Wedding Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <!-- <img src="/kirk/images/wedding_soup-2.jpg" alt="Wedding Soup" style="width:90%"> -->
+            Image - add later
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

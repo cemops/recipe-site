@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Potato Salad - By Grandma Goodman</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder">
+    </div>
+        
+    <script>
+    $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    });
+    </script>
+<!--end of Navigation bar-->
+
+<!--Header-->
+    <div id="header-placeholder">
+    </div>
+    
+    <script>
+    $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+    });
+    </script>
+<!--end of header-->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+     <h1>Grandma Goodman's Potato Salad</h1>
+    </div>
+</div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+         <h3>Ingredients:</h3>
+         <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 qt. of potatoes</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">2 sticks celery</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 small onion</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 small cucumber</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">8–10 boiled eggs</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">1 qt. jar of Miracle Whip</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt to taste</div>
+            </p>
+        </div>
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+             <p>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Fill a 2 qt. saucepan or roasting pan with potatoes. Cover with water and boil until done.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Cool the potatoes, peel, and slice small.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Dice celery, onion, cucumber, and boiled eggs. Mix them with the potatoes.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Add salt to taste.</div>
+             <div class="list-todo-container"><input type="checkbox" class="list-todo">Combine with 1 qt. jar of Miracle Whip and mix well.</div>
+             </p>
+        </div>
+        
+        <!--Blank Column-->
+        <div class="w3-col m2">
+            <br>
+        </div>
+        
+    </div>
+    
+    <!-- Image Row -->
+    <div class="w3-row">
+     <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/potato_salad1.jpg" alt="Potato Salad" style="width:90%">
+     </div>
+    
+     <div class="w3-col m4 w3-center">
+     <img src="/kirk/images/potato_salad2.jpg" alt="Potato Salad" style="width:90%">
+     </div>
+    
+    <!-- Blank Column -->
+        <div class="w3-col m2">
+         <br>
+        </div>
+    
+    </div>
+
+</div>
+
+<!--Footer-->
+    <div id="footer-placeholder">
+    </div>
+    
+    <script>
+    $(function(){
+            $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+    </script>
+<!--end of Footer-->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+</body>
+</html>

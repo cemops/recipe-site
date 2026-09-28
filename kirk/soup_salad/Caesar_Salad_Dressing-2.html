@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Caesar Salad Dressing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- ================= RECIPE CONTAINER ================= -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Title -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d1">
+        <h1>Caesar Salad Dressing</h1>
+    </div>
+</div>
+
+<!-- ================= FULL BATCH ================= -->
+<div class="w3-row">
+    <div class="w3-col m2"><br></div>
+
+    <!-- Ingredients -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Ingredients (Full Batch)</h3>
+        <button onclick="clearAllCheckboxes()">Delete All</button><br><br>
+
+        <div class="list-todo-container"><input type="checkbox">2 small garlic cloves, minced</div><br>
+        <div class="list-todo-container"><input type="checkbox">1 tsp anchovy paste</div><br>
+        <div class="list-todo-container"><input type="checkbox">2 Tbsp freshly squeezed lemon juice (1 lemon)</div><br>
+        <div class="list-todo-container"><input type="checkbox">1 tsp Dijon mustard</div><br>
+        <div class="list-todo-container"><input type="checkbox">1 tsp Worcestershire sauce</div><br>
+        <div class="list-todo-container"><input type="checkbox">1 cup mayonnaise</div><br>
+        <div class="list-todo-container"><input type="checkbox">1/2 cup freshly grated Parmigiano-Reggiano</div><br>
+        <div class="list-todo-container"><input type="checkbox">1/4 tsp salt</div><br>
+        <div class="list-todo-container"><input type="checkbox">1/4 tsp ground black pepper</div><br>
+    </div>
+
+    <!-- Instructions -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Instructions</h3>
+        <button onclick="clearAllCheckboxes()">Delete All</button><br><br>
+
+        <div class="list-todo-container"><input type="checkbox">1. Whisk garlic, anchovy paste, lemon juice, Dijon, and Worcestershire.</div><br>
+        <div class="list-todo-container"><input type="checkbox">2. Add mayonnaise, Parmigiano-Reggiano, salt, and pepper.</div><br>
+        <div class="list-todo-container"><input type="checkbox">3. Whisk until smooth and creamy.</div><br>
+        <div class="list-todo-container"><input type="checkbox">4. Taste and adjust seasoning.</div><br>
+        <div class="list-todo-container"><input type="checkbox">5. Refrigerate up to one week.</div><br>
+    </div>
+
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- ================= SINGLE SERVING ================= -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d3">
+        <h2>Single-Serving House Caesar (1 Salad)</h2>
+        <p><em>Designed for one salad · No leftovers · Uses real anchovies</em></p>
+    </div>
+</div>
+
+<div class="w3-row">
+    <div class="w3-col m2"><br></div>
+
+    <!-- Single Ingredients -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Ingredients</h3>
+        <button onclick="clearAllCheckboxes()">Delete All</button><br><br>
+
+        <div class="list-todo-container"><input type="checkbox">1 small pinch garlic, very finely minced</div><br>
+        <div class="list-todo-container"><input type="checkbox">About 1/4 Ortiz anchovy, smashed to a paste</div><br>
+        <div class="list-todo-container"><input type="checkbox">Fresh lemon juice, added drop by drop</div><br>
+        <div class="list-todo-container"><input type="checkbox">1 small dollop Dijon mustard (pea-sized)</div><br>
+        <div class="list-todo-container"><input type="checkbox">2 small dashes Worcestershire sauce</div><br>
+        <div class="list-todo-container"><input type="checkbox">3 heaping spoonfuls mayonnaise</div><br>
+        <div class="list-todo-container"><input type="checkbox">2 generous spoonfuls Parmigiano-Reggiano, plus more to taste</div><br>
+        <div class="list-todo-container"><input type="checkbox">Freshly ground black pepper</div><br>
+        <div class="list-todo-container"><input type="checkbox">(Optional) 1/2 tsp olive oil from anchovy tin</div><br>
+    </div>
+
+    <!-- Single Method -->
+    <div class="w3-col m4 w3-theme-l4">
+        <h3>Method</h3>
+        <button onclick="clearAllCheckboxes()">Delete All</button><br><br>
+
+        <div class="list-todo-container"><input type="checkbox">1. Smash garlic and anchovy into a smooth paste.</div><br>
+        <div class="list-todo-container"><input type="checkbox">2. Stir in Dijon and Worcestershire.</div><br>
+        <div class="list-todo-container"><input type="checkbox">3. Mix in mayonnaise until creamy.</div><br>
+        <div class="list-todo-container"><input type="checkbox">4. Fold in Parmesan.</div><br>
+        <div class="list-todo-container"><input type="checkbox">5. Add lemon a few drops at a time, tasting as you go.</div><br>
+        <div class="list-todo-container"><input type="checkbox">6. Finish with black pepper and anchovy oil if using.</div><br>
+    </div>
+
+    <div class="w3-col m2"><br></div>
+</div>
+
+<!-- ================= CHEF NOTES ================= -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d3">
+        <h2>Chef’s Notes & Tips</h2>
+    </div>
+
+    <div class="w3-container w3-theme-l4">
+        <p><strong>• Use real anchovies.</strong> High-quality anchovies add depth without harsh saltiness.</p>
+        <p><strong>• Lemon control matters.</strong> Caesar should be bright, not citrus-forward.</p>
+        <p><strong>• Fixes:</strong><br>
+            Too sharp → Parmesan first, then mayo<br>
+            Too thick → tiny splash of water or lemon<br>
+            Flat → black pepper or Worcestershire
+        </p>
+        <p><strong>• Scaling:</strong> The single-serving version is designed for one salad with no waste.</p>
+    </div>
+</div>
+
+<!-- ================= NUTRITION ================= -->
+<div class="w3-row">
+    <div class="w3-center w3-theme-d3">
+        <h2>Nutrition Information (Full Recipe)</h2>
+    </div>
+
+    <div class="w3-container w3-center w3-theme-l4">
+        <p><strong>Serving Size:</strong> About 2 Tbsp</p>
+        <p><strong>Calories:</strong> 184</p>
+        <p><strong>Fat:</strong> 19g</p>
+        <p><strong>Saturated Fat:</strong> 1g</p>
+        <p><strong>Carbohydrates:</strong> 1g</p>
+        <p><strong>Protein:</strong> 2g</p>
+        <p><strong>Sodium:</strong> 296mg</p>
+    </div>
+</div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

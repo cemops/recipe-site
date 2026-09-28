@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Italian Wedding Soup</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+<!-- end Navigation bar -->
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+<!-- end Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Italian Wedding Soup</h1>
+        </div>
+    </div>
+
+    <!-- Ingredients & Directions Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Ingredients</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <h4>Meatballs &nbsp; <i>** Last time I doubled the meatball ingredients and froze half of them **</i></h4>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8 oz lean ground beef</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">8 oz ground pork</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup fresh hearty white bread crumbs*</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/4 cup chopped fresh parsley</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/2 tsp minced fresh oregano</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1/2 cup finely shredded parmesan</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 large egg</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Salt and freshly ground black pepper</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbsp olive oil</div>
+                <h4>Soup</h4>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbsp olive oil</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/4 cups 1/4-inch diced carrots</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 1/4 cups diced yellow onion</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3/4 cup 1/4-inch diced celery</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 cloves garlic , minced (1 1/2 Tbsp)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5 (14.5 oz) cans low-sodium chicken broth</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 cup dry acini de pepe or orzo pasta**</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 oz fresh spinach , chopped</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Finely shredded parmesan , for serving</div>
+            </p>
+        </div>
+
+        <!-- Directions Column -->
+        <div class="w3-col m4 w3-theme-l4 w3-padding">
+            <h3>Instructions</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">For the meatballs:</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add beef and pork to a large mixing bowl. Add in bread crumbs, parsley, oregano, parmesan, egg, 1 tsp salt and 1/4 tsp pepper.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Gently toss and break up mixture with hands to evenly coat and distribute. Shape mixture into very small meatballs, about 3/4 inch to 1 inch and transfer to a large plate.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Heat 1 Tbsp olive oil in a large non-stick skillet over medium-high heat. Add half of the meatballs and cook until browned, turning occasionally (to brown on 2 or 3 sides), about 4 minutes total.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Transfer meatballs to a plate lined with paper towels while leaving oil in skillet. Repeat process with remaining meatballs (note that meatballs won't be cooked through at this point, they'll continue to cook through in the soup).</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">For the soup:</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">While meatballs are browning, heat 1 Tbsp olive oil in a large pot over medium-high heat. Add carrots, onions and celery and saute until veggies have softened about 6 - 8 minutes, add garlic and saute 1 minute longer.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Pour in chicken broth, season soup with salt and pepper to taste and bring mixture to a boil. Add in pasta and meatballs, reduce heat to light boil (about medium or medium-low).</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Cover and cook, stirring occasionally until pasta is tender and meatballs have cooked through, about 10 minutes, while adding in spinach during the last minute of cooking. Serve warm, sprinkle each serving with parmesan cheese.</div>
+                <h4>Notes</h4>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">*I recommend using bread such as a La Brea french loaf. Just grind up a slice in a food processor to find crumbs. Save the remaining bread for serving (slathered with butter of course) or freeze for another later use.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">**If you like a more brothier soup you can reduce pasta to 3/4 cup. Note that as the soup sits the pasta will absorb more broth so you can add more broth to thin the soup as desired.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Image Row -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/italian_wedding_soup-1.jpg" alt="Italian Wedding Soup" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            Image - add later
+            <!-- <img src="/kirk/images/italian_wedding_soup-2.jpg" alt="Italian Wedding Soup" style="width:90%"> -->
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+<!--end Footer-->
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

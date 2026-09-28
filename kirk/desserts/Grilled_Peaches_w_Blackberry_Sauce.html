@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Grilled Peaches with Blackberry Sauce</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Grilled Peaches with Blackberry Sauce</h1>
+            <h5>Prep Time: 10 Minutes &nbsp;|&nbsp; Grill Time: 8–10 Minutes</h5>
+        </div>
+    </div>
+
+    <!-- First Row -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+
+        <!-- Ingredients -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <h4>For the Sauce</h4>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">6 oz fresh blackberries (about 1 cup)</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 to 3 Tbsp sugar</div>
+            </p>
+            <h4>For the Peaches</h4>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbsp Unsalted Butter</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Tbsp granulated sugar</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 medium peaches, halved and pitted</div>
+            </p>
+            <h4>For Serving</h4>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup vanilla ice cream</div>
+            </p>
+        </div>
+
+        <!-- Instructions -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Directions:</h3>
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">In a food processor, puree the blackberries with 1 Tbsp water.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Add 1 to 3 Tbsp sugar to the puree, to taste. Set aside.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Melt butter in a small saucepan over medium heat.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Stir in granulated sugar until dissolved.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Brush peach halves all over with butter-sugar mixture.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Grill peaches over Direct Medium Heat, turning every 3 minutes, for 8–10 minutes total, until browned in spots and heated through.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Place grilled peaches in a bowl with vanilla ice cream.</div>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">Drizzle with blackberry sauce and serve immediately.</div>
+            </p>
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+    <!-- Optional Image -->
+    <div class="w3-row">
+        <div class="w3-col m2"><br></div>
+        <div class="w3-col m8 w3-center">
+            <img src="/kirk/images/grilled_peaches.jpg" alt="Grilled Peaches with Blackberry Sauce" style="width:90%">
+        </div>
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+</body>
+</html>

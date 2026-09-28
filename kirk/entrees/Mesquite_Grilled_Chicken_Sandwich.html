@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mesquite-Grilled Chicken Sandwich</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation bar -->
+<div id="nav-placeholder"></div>
+<script>
+  $(function(){
+    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+  });
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+  $(function(){
+    $("#header-placeholder").load("/kirk/css/header_kirk.html");
+  });
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Mesquite-Grilled Chicken Sandwich</h1>
+            <p><em>Serves 4</em></p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 cups mesquite wood chips</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/4 cup fat-free mayonnaise</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp Worcestershire sauce (for mayo mix)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 tsp finely shredded lime peel or lemon peel</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 4 medium skinless, boneless chicken breasts (thinly sliced if possible)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 TBS Worcestershire sauce (for brushing chicken)</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 tsp garlic pepper</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/8 tsp salt</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1/2 cup shredded mozzarella cheese</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Whole wheat hamburger buns</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Tomato slices</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Avocado slices</div>
+
+                    <h4>Optional / Tips</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Grilled onion, red/orange pepper, romaine lettuce</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Substitute whole wheat flat buns</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> At least 1 hour before grilling, soak mesquite wood chips.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Combine mayonnaise, 1 tsp Worcestershire sauce, and lime/lemon peel. Cover and refrigerate until serving.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> If chicken is not thinly sliced, place each piece between plastic wrap and pound to ~1/2 inch thick.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Brush both sides of chicken with 2 TBS Worcestershire sauce; sprinkle with garlic pepper and salt.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Start grilling vegetables ~5 minutes before adding chicken.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Grill chicken over direct medium heat 5–7 minutes, turning once. Sprinkle each piece with mozzarella cheese.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Toast bread and romaine lettuce with ~2 minutes remaining.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Spread mayo on bread; add chicken, lettuce, tomato, and avocado. Serve with grilled vegetables on the side.</div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+    <!-- Image Row (Optional) -->
+    <div class="w3-row w3-padding-32">
+        <div class="w3-col m2"><br></div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/mesquitechicken1.jpg" alt="Mesquite-Grilled Chicken Sandwich" style="width:90%">
+        </div>
+
+        <div class="w3-col m4 w3-center">
+            <img src="/kirk/images/mesquitechicken2.jpg" alt="Grilled Chicken Sandwich" style="width:90%">
+        </div>
+
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+<!-- end Recipe Container -->
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+  $(function(){
+    $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+  });
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

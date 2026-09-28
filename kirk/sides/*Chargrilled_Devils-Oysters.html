@@ -1,0 +1,125 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chargrilled Devils (Oysters)</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-blue.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+
+<!-- Navigation -->
+<div id="nav-placeholder"></div>
+<script>
+$(function(){
+  $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+});
+</script>
+
+<!-- Header -->
+<div id="header-placeholder"></div>
+<script>
+$(function(){
+  $("#header-placeholder").load("/kirk/css/header_kirk.html");
+});
+</script>
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+    <!-- Title -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Chargrilled Devils (Oysters)</h1>
+            <p><em>Smoky, spicy, bacon-wrapped oysters</em></p>
+            <p>Serves 6</p>
+        </div>
+    </div>
+
+    <div class="w3-row">
+        <div class="w3-col m1"><br></div>
+
+        <div class="w3-col m10">
+
+            <!-- Ingredients -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Ingredients</h3>
+                    <button onclick="clearAllCheckboxes();">Delete All</button>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 36 fresh oysters</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 18 bacon slices</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tbsp paprika</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 tsp cayenne pepper</div>
+
+                    <h4>Sauce</h4>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 fresh red chili, seeded & finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 garlic clove, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 1 shallot, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp fresh parsley, finely chopped</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> 2 tbsp lemon juice</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Salt & black pepper, to taste</div>
+                </div>
+            </div>
+
+            <!-- Instructions -->
+            <div class="w3-row w3-padding-small">
+                <div class="w3-col m12 w3-theme-l4 w3-padding">
+                    <h3>Instructions</h3>
+
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Preheat grill to medium-high heat.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Open oysters, catching the juice from the shells in a bowl.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cut oysters from bottom shells, set aside, and add any remaining juice to the bowl.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Add chili, garlic, shallot, parsley, and lemon juice to the bowl. Season with salt and pepper, mix well, cover, and chill until needed.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Cut each bacon slice in half crosswise.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Season oysters with paprika and cayenne.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Wrap each oyster in half a bacon slice and thread onto skewers.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Grill over direct heat, turning frequently, for about 5 minutes until bacon is browned and crispy.</div>
+                    <div class="list-todo-container"><input type="checkbox" class="list-todo"> Transfer to a platter and serve immediately with the chilled sauce.</div>
+                </div>
+            </div>
+
+            <!-- Image Row -->
+
+            <div class="w3-row w3-padding-32">
+                <div class="w3-col m2"><br></div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/chargrilled_devils1.jpg" alt="Chargrilled Oysters" style="width:90%">
+                </div>
+
+                <div class="w3-col m4 w3-center">
+                    <img src="/kirk/images/chargrilled_devils2.jpg" alt="Bacon Wrapped Oysters" style="width:90%">
+                </div>
+
+                <div class="w3-col m2"><br></div>
+            </div>
+
+        </div>
+
+        <div class="w3-col m1"><br></div>
+    </div>
+
+</div>
+
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+<script>
+$(function(){
+  $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+});
+</script>
+
+<script>
+function clearAllCheckboxes() {
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => cb.checked = false);
+}
+</script>
+
+</body>
+</html>

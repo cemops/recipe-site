@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chicken Caesar Salad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+
+<body>
+<!--Navigation bar-->
+    <div id="nav-placeholder"></div>
+    <script>
+        $(function(){
+            $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+        });
+    </script>
+<!-- End of Navigation bar -->
+
+<!-- Header -->
+    <div id="header-placeholder"></div>
+    <script>
+        $(function(){
+            $("#header-placeholder").load("/kirk/css/header_kirk.html");
+        });
+    </script>
+<!-- End of Header -->
+
+<!-- Recipe Container -->
+<div class="w3-container w3-card-4 w3-margin">
+
+<!-- Recipe Name -->
+    <div class="w3-row">
+        <div class="w3-center w3-theme-d1">
+            <h1>Chicken Caesar Salad</h1>
+        </div>
+    </div>
+
+<!-- First Row -->
+    <div class="w3-row">
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    
+        <!-- Ingredients Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Ingredients:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo"><a href="Caesar_Salad_Dressing.html">Caesar Salad Dressing</a></div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3 slices country-style bread, cut into 1/2 in. cubes (optional)</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4 boneless, skinless chicken breast halves, or chicken tenders</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 large Romaine lettuce or 3 hearts of romaine, chopped</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1 Cup freshly shaved Parmesian cheese</div><br>
+            </p>
+        </div>
+
+        <!-- Instructions Column -->
+        <div class="w3-col m4 w3-theme-l4">
+            <h3>Instructions:</h3>
+            <!-- Delete All Button -->
+            <button onclick="clearAllCheckboxes();">Delete All</button>
+            
+            <p>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">1. Prepare the Homemade Caesar Dressing.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">2. Marinate the chicken with the Caesar Dressing.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">3. Grill the chicken until fully cooked.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">4. Add Bread cubes, if using to the grilling grate for the last 2 - 3 minutes. You could also do the bread in the oven with italian seasoning.</div><br>
+                <div class="list-todo-container"><input type="checkbox" class="list-todo">5. Combine the salad with the dressing, grilled chicken, and cheese.</div><br>
+            </p>
+        </div>
+
+        <!-- Blank Column -->
+        <div class="w3-col m2"><br></div>
+    </div>
+
+</div>
+
+<!--Footer-->
+<div id="footer-placeholder"></div>
+<script>
+    $(function(){
+        $("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+    });
+</script>
+<!-- End of Footer -->
+
+<script>
+    function clearAllCheckboxes() {
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach((checkbox) => {
+            checkbox.checked = false;
+        });
+    }
+</script>
+
+</body>
+</html>
