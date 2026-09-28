@@ -2,7 +2,7 @@
 /*
  * search.php — index-free search across Kirk's recipe pages.
  *
- * Place this file at /kirk/search.php. On each search it scans the recipe
+ * Place this file at /search.php. On each search it scans the recipe
  * subfolders directly (no stored index), so new recipes are searchable the
  * moment they're uploaded. Searches both the title and the page text.
  */
@@ -49,7 +49,7 @@ if ($q !== '') {
             }
             if (!$match) continue;
 
-            $url = '/kirk/' . basename($dir) . '/' . basename($file);
+            $url = '/' . basename($dir) . '/' . basename($file);
             $results[$url] = $title;
         }
     }
@@ -65,8 +65,8 @@ if ($q !== '') {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-light-green.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/kirk/css/kirk_style.css">
-    <link rel="icon" href="/kirk/images/kr.jpg" type="image/jpg">
+    <link rel="stylesheet" href="/css/kirk_style.css">
+    <link rel="icon" href="/images/kr.jpg" type="image/jpg">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
 <body>
@@ -74,20 +74,20 @@ if ($q !== '') {
 <!-- Navigation bar -->
 <div id="nav-placeholder"></div>
 <script>
-$(function () { $("#nav-placeholder").load("/kirk/css/nav_kirk.html"); });
+$(function () { $("#nav-placeholder").load("/css/nav_kirk.html"); });
 </script>
 
 <!-- Header -->
 <div id="header-placeholder"></div>
 <script>
-$(function () { $("#header-placeholder").load("/kirk/css/header_kirk.html"); });
+$(function () { $("#header-placeholder").load("/css/header_kirk.html"); });
 </script>
 
 <!-- Results -->
 <div class="w3-container w3-card-4 w3-margin">
     <h2 class="w3-center w3-theme-d1 w3-padding">Recipe Search</h2>
 
-    <form action="/kirk/search.php" method="get" class="w3-center w3-padding" role="search">
+    <form action="/search.php" method="get" class="w3-center w3-padding" role="search">
         <input type="search" name="q" value="<?php echo htmlspecialchars($q, ENT_QUOTES); ?>"
                placeholder="Search recipes&hellip;" aria-label="Search recipes"
                class="w3-input w3-border" style="display:inline-block; width:60%; max-width:400px;">
@@ -117,7 +117,7 @@ $(function () { $("#header-placeholder").load("/kirk/css/header_kirk.html"); });
 <!-- Footer -->
 <div id="footer-placeholder"></div>
 <script>
-$(function () { $("#footer-placeholder").load("/kirk/css/footer_kirk.html"); });
+$(function () { $("#footer-placeholder").load("/css/footer_kirk.html"); });
 </script>
 
 </body>

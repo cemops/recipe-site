@@ -15,7 +15,7 @@
 <div id="nav-placeholder"></div>
 <script>
 $(function(){
-    $("#nav-placeholder").load("/kirk/css/nav_kirk.html");
+    $("#nav-placeholder").load("/css/nav_kirk.html");
 });
 </script>
 
@@ -28,7 +28,7 @@ $(function(){
 		
 		<script>
 		$(function(){
-				$("#header-placeholder").load("/kirk/css/header_kirk.html");
+				$("#header-placeholder").load("/css/header_kirk.html");
 		});
 		</script>
 		<!--end of header-->
@@ -75,7 +75,7 @@ $(function(){
 		
 		<script>
 		$(function(){
-				$("#footer-placeholder").load("/kirk/css/footer_kirk.html");
+				$("#footer-placeholder").load("/css/footer_kirk.html");
 		});
 		</script>
 		<!--end of Footer-->
